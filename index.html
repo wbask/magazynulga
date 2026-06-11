@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta name="generator" content="Hugo 0.151.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magazyn „Ulga”</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <style>
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+line-height: 1.6;
+}
+.menu, .bottom {
+display: flex;
+justify-content: space-between;
+padding: 20px;
+background-color: white;
+text-transform: uppercase;
+font-size: 24px;
+}
+.logo {
+text-align: center;
+padding: 40px 0;
+}
+.logo img {
+width: 100%;
+max-width: 800px;
+height: auto;
+}
+.grid {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 20px;
+padding: 20px;
+max-width: 1200px;
+margin: 0 auto;
+}
+.post {
+border: 1px solid #ddd;
+padding: 20px;
+background-color: white;
+}
+.post h4 {
+margin: 0 0 8px;
+font-size: 15spx;
+}
+.post .author {
+margin: 0 0 12px;
+font-weight: 700;
+ 
+}
+
+.flip-container {
+perspective: 1000px;
+margin-bottom: 16px;
+}
+.flip-container:hover .flipper {
+transform: rotateY(180deg);
+}
+.flipper {
+transition: transform 0.6s;
+transform-style: preserve-3d;
+position: relative;
+}
+.front, .back1, .back2, .back3 {
+backface-visibility: hidden;
+}
+.back1 {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+transform: rotateY(180deg);
+background-color: #CDD592;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 10px;
+box-sizing: border-box;
+font-size: 15px;
+color:#1B062B;
+font-family: Playwrite IN;
+}
+
+.back2 {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+transform: rotateY(180deg);
+background-color: #60866A;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 10px;
+box-sizing: border-box;
+font-size: 15px;
+color:#C4D168;
+font-family: Playwrite IN;
+}
+
+.back3 {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+transform: rotateY(180deg);
+background-color: #90C7B7;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 10px;
+box-sizing: border-box;
+font-size: 15px;
+color:#2C647C;
+font-family: Playwrite IN;
+}
+
+.post img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+h4 {
+    font-family: Playwrite IN;
+}
+
+.author {
+    font-family: "Playwrite ID", cursive;
+}
+
+.opis {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 1.4;
+    font-family: Playwrite IN;
+}
+
+.about {
+    text-align: center;
+    font-size: 50px;
+}
+
+      .gridmain {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      }
+
+      @media (max-width: 768px) {
+        .grid,
+        .gridmain {
+          grid-template-columns: 1fr;
+        }
+
+        .opis,
+        article p,
+        article h1,
+        article h2,
+        article h3,
+        .footnotes,
+        blockquote {
+          width: 100%;
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+
+      a, a:visited {
+        text-decoration: none;
+        color: black;
+      }
+      a:hover, a:active {
+        text-decoration: underline;
+      }
+
+            .photo {
+      text-align: center;
+      padding: 20px 0;
+      }
+      .photo img {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      }
+
+      
+ 
+
+article p {
+font-size: 22px;
+width: 40%;
+margin: 0px auto;
+font-size: 17px;
+text-align: justify;
+}
+
+article p img {
+width: 120%;
+height: auto;
+display: relative;
+margin: 20px 0;
+margin-left: -100px;
+}
+
+article h1 {
+    width: 70%;
+    font-size: 42px;
+    margin: 0px auto;
+    font-family: Playwrite IN
+}
+
+article h2 {
+    width: 70%;
+    font-size: 25px;
+    margin: 0px auto;
+    font-family: Playwrite IN
+}
+
+article h3 {
+    width: 60%;
+    margin: 0px auto;
+    font-size: 22px;
+    text-align: justify;
+    font-family: Playwrite IN
+}
+
+.footnotes {
+    width: 55%;
+margin: 0px auto;
+font-size: 15px;
+}
+
+blockquote {
+    width: 140%;
+    font-size: 19px;
+    margin: 0px auto;
+    margin-left: -100px;
+    margin-right: 1000px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: "Playwrite US Modern";
+}
+      
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <section class="menu">
+        
+      <a href="/magazynulga/wstep/">Wstęp</a>
+       
+      <a href="/magazynulga/o-nas/">O nas</a>
+       
+      </section>
+
+      <section class="logo">
+      <a href="/">
+        <img src="/magazynulga/ulga_logo.svg" alt="Przekreślone tłuste litery napisu „Ulga”, logotyp magazynu">
+      </a>
+      </section>
+    </header>
+
+    <main>
+      
+<section class="photo">
+  <img src="poczatek.jpg" alt="Dwie osoby ubrane w białe koszule leżąc na trawie trzymają się za ręce, a ich twarze są niewidoczne.">
+</section>
+
+<section class="gridmain">
+  
+  <a href="/magazynulga/artykul/czy-jaszczurki-maja-racje/">
+    <div class="post">
+      
+      
+        
+          
+          <img src="/magazynulga/artykul/czy-jaszczurki-maja-racje/img/cover_hu_d228cc40d7e1ff50.png" alt="Czy jaszczurki mają rację?" loading="lazy">
+        
+      
+      <p class="author">Maja Beczek</p>
+      <h4>Czy jaszczurki mają rację?</h4>
+    </div>
+  </a>
+  
+  <a href="/magazynulga/artykul/ekosciema/">
+    <div class="post">
+      
+      
+        
+          
+          <img src="/magazynulga/artykul/ekosciema/img/cover_hu_7360b744a5d8c843.jpg" alt="Ekościema" loading="lazy">
+        
+      
+      <p class="author">Anna Ziółek</p>
+      <h4>Ekościema</h4>
+    </div>
+  </a>
+  
+  <a href="/magazynulga/artykul/jedna-tabletka/">
+    <div class="post">
+      
+      
+        
+          
+          <img src="/magazynulga/artykul/jedna-tabletka/cover_hu_3f26ae5c618154.jpg" alt="Jedna tabletka, wieczna ulga" loading="lazy">
+        
+      
+      <p class="author">Aneta Dmochowska</p>
+      <h4>Jedna tabletka, wieczna ulga</h4>
+    </div>
+  </a>
+  
+  <a href="/magazynulga/artykul/kobiety-gora/">
+    <div class="post">
+      
+      
+        
+          
+          <img src="/magazynulga/artykul/kobiety-gora/img/cover_hu_18b80ac41a30d348.jpg" alt="Kobiety górą!" loading="lazy">
+        
+      
+      <p class="author">Maja Romanowska</p>
+      <h4>Kobiety górą!</h4>
+    </div>
+  </a>
+  
+  <a href="/magazynulga/artykul/najlepsza-wersja-siebie-bez-ulgi/">
+    <div class="post">
+      
+      
+        
+          
+          <img src="/magazynulga/artykul/najlepsza-wersja-siebie-bez-ulgi/img/cover_hu_ddfd3515afddd16d.jpg" alt="Najlepsza wersja siebie bez ulgi. Rozmowa z Aleksandrą Kisiel" loading="lazy">
+        
+      
+      <p class="author">Natalia Stępniak</p>
+      <h4>Najlepsza wersja siebie bez ulgi. Rozmowa z Aleksandrą Kisiel</h4>
+    </div>
+  </a>
+  
+  <a href="/magazynulga/artykul/nie-na-moim-polu-moko/">
+    <div class="post">
+      
+      
+        
+          
+          <img src="/magazynulga/artykul/nie-na-moim-polu-moko/img/cover_hu_47415d61ca93687a.JPG" alt="Nie na moim polu (mokotowskim)" loading="lazy">
+        
+      
+      <p class="author">Maja Lizak</p>
+      <h4>Nie na moim polu (mokotowskim)</h4>
+    </div>
+  </a>
+  
+  <a href="/magazynulga/artykul/nosniki-pamieci/">
+    <div class="post">
+      
+      
+        
+          
+          <img src="/magazynulga/artykul/nosniki-pamieci/img2/cover_hu_9b424820ee1416ac.jpeg" alt="Nośniki pamięci" loading="lazy">
+        
+      
+      <p class="author">Marta Milewska</p>
+      <h4>Nośniki pamięci</h4>
+    </div>
+  </a>
+  
+  <a href="/magazynulga/artykul/odbicie-w-uldze/">
+    <div class="post">
+      
+      
+        
+          
+          <img src="/magazynulga/artykul/odbicie-w-uldze/img/cover_hu_c3d960aec63ad6b5.jpg" alt="Odbicie w uldze" loading="lazy">
+        
+      
+      <p class="author">Ewa Mirończuk</p>
+      <h4>Odbicie w uldze</h4>
+    </div>
+  </a>
+  
+  <a href="/magazynulga/artykul/podroz-w-czasie/">
+    <div class="post">
+      
+      
+        
+          
+          <img src="/magazynulga/artykul/podroz-w-czasie/img/cover_hu_e5186cdc361fc599.jpg" alt="Podróż w czasie i cyberprzestrzeni" loading="lazy">
+        
+      
+      <p class="author">Janka Stelmaszyk</p>
+      <h4>Podróż w czasie i cyberprzestrzeni</h4>
+    </div>
+  </a>
+  
+  <a href="/magazynulga/artykul/proces-tworczy-jako-zrodlo-ulgi/">
+    <div class="post">
+      
+      
+        
+          
+          <img src="/magazynulga/artykul/proces-tworczy-jako-zrodlo-ulgi/img/fot4_hu_7004b4095ef8ecc2.jpeg" alt="Proces twórczy jako źródło ulgi i samorefleksji" loading="lazy">
+        
+      
+      <p class="author">Gabriela Kowalczyk</p>
+      <h4>Proces twórczy jako źródło ulgi i samorefleksji</h4>
+    </div>
+  </a>
+  
+  <a href="/magazynulga/artykul/sanatorium/">
+    <div class="post">
+      
+      
+        
+          
+          <img src="/magazynulga/artykul/sanatorium/img/cover_hu_d22a21f25f36b4f7.jpg" alt="Projekt muzyczny [audio:spa]" loading="lazy">
+        
+      
+      <p class="author">Gabriela Cholewińska</p>
+      <h4>Projekt muzyczny [audio:spa]</h4>
+    </div>
+  </a>
+  
+  <a href="/magazynulga/artykul/rura-juz-nie-musi/">
+    <div class="post">
+      
+      
+        
+          
+          <img src="/magazynulga/artykul/rura-juz-nie-musi/images/IMG_7001_hu_eef8f7c9b101d598.PNG" alt="Rura już nie musi" loading="lazy">
+        
+      
+      <p class="author">Marta Łuszcz</p>
+      <h4>Rura już nie musi</h4>
+    </div>
+  </a>
+  
+  <a href="/magazynulga/artykul/styl-i-przygnebienie/">
+    <div class="post">
+      
+      
+        
+          
+          <img src="/magazynulga/artykul/styl-i-przygnebienie/img/cover_hu_4f993dfa7850f915.JPG" alt="Styl i przygnębienie" loading="lazy">
+        
+      
+      <p class="author">Milana Pepenina</p>
+      <h4>Styl i przygnębienie</h4>
+    </div>
+  </a>
+  
+  <a href="/magazynulga/artykul/tworczosc-koldijka/">
+    <div class="post">
+      
+      
+        
+          
+          <img src="/magazynulga/artykul/tworczosc-koldijka/img/img1_hu_9461455e1d64cf12.jpg" alt="Twórczość Gerbena Koldijka, czyli twórczość w żałobie" loading="lazy">
+        
+      
+      <p class="author">Ruta Zielińska</p>
+      <h4>Twórczość Gerbena Koldijka, czyli twórczość w żałobie</h4>
+    </div>
+  </a>
+  
+  <a href="/magazynulga/artykul/ulga-po-pracy/">
+    <div class="post">
+      
+      
+        
+          
+          <img src="/magazynulga/artykul/ulga-po-pracy/img/cover_hu_761e38cd5de85468.jpg" alt="Ulga po pracy" loading="lazy">
+        
+      
+      <p class="author">Martyna Krawcewicz</p>
+      <h4>Ulga po pracy</h4>
+    </div>
+  </a>
+  
+  <a href="/magazynulga/artykul/uwalniajace-wedrowki/">
+    <div class="post">
+      
+      
+        
+          
+          <img src="/magazynulga/artykul/uwalniajace-wedrowki/img/ilustracja1_hu_e412d3a10b1b5129.jpg" alt="Uwalniające wędrówki" loading="lazy">
+        
+      
+      <p class="author">Ula Kordasiewicz</p>
+      <h4>Uwalniające wędrówki</h4>
+    </div>
+  </a>
+  
+  <a href="/magazynulga/artykul/w-stali-domu/">
+    <div class="post">
+      
+      
+        
+          
+          <img src="/magazynulga/artykul/w-stali-domu/img/cover_hu_8773c5ca9b585fc8.jpg" alt="W jednym stali domu" loading="lazy">
+        
+      
+      <p class="author">Laura Byśkiniewicz</p>
+      <h4>W jednym stali domu</h4>
+    </div>
+  </a>
+  
+  <a href="/magazynulga/artykul/w-srodku-nie-posiedzisz/">
+    <div class="post">
+      
+      
+        
+          
+          <img src="/magazynulga/artykul/w-srodku-nie-posiedzisz/img/3_hu_f08afb215050b1d9.jpg" alt="W środku nie posiedzisz" loading="lazy">
+        
+      
+      <p class="author">Bartłomiej Kulmatycki</p>
+      <h4>W środku nie posiedzisz</h4>
+    </div>
+  </a>
+  
+  <a href="/magazynulga/artykul/wrozka-gpt/">
+    <div class="post">
+      
+      
+        
+          
+          <img src="/magazynulga/artykul/wrozka-gpt/img/img_hu_38ace6f14f59e515.png" alt="WróżkaGPT" loading="lazy">
+        
+      
+      <p class="author">Julia Kaptacz</p>
+      <h4>WróżkaGPT</h4>
+    </div>
+  </a>
+  
+  <a href="/magazynulga/artykul/wypalenie-urlopowe/">
+    <div class="post">
+      
+      
+        
+          
+          <img src="/magazynulga/artykul/wypalenie-urlopowe/img/cover_hu_3f68ab864d6fe44e.jpg" alt="Wypalenie urlopowe, czyli dlaczego stresujemy się na wakacjach" loading="lazy">
+        
+      
+      <p class="author">Wiktoria Szlagowska</p>
+      <h4>Wypalenie urlopowe, czyli dlaczego stresujemy się na wakacjach</h4>
+    </div>
+  </a>
+  
+</section>
+
+
+<section class="photo">
+  <img src="koniec.jpg" alt="Dwie osoby ubrane w białe koszule leżą na trawie przytulając się.">
+</section>
+
+    </main>
+
+    <footer>
+
+      <section class="logo">
+      <a href="/">
+        <img src="/magazynulga/ulga_logo.svg" alt="Przekreślone tłuste litery napisu „Ulga”, logotyp magazynu">
+      </a>
+      </section>
+
+      <section class="bottom">
+        <div><a href="https://wbask.asp.waw.pl/" target="_blank">WBASK</a></div>
+        <div>2026</div>
+      </section>
+
+    </footer>
+  </body>
+</html>

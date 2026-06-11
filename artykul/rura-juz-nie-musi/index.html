@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rura już nie musi / Magazyn „Ulga”</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <style>
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+line-height: 1.6;
+}
+.menu, .bottom {
+display: flex;
+justify-content: space-between;
+padding: 20px;
+background-color: white;
+text-transform: uppercase;
+font-size: 24px;
+}
+.logo {
+text-align: center;
+padding: 40px 0;
+}
+.logo img {
+width: 100%;
+max-width: 800px;
+height: auto;
+}
+.grid {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 20px;
+padding: 20px;
+max-width: 1200px;
+margin: 0 auto;
+}
+.post {
+border: 1px solid #ddd;
+padding: 20px;
+background-color: white;
+}
+.post h4 {
+margin: 0 0 8px;
+font-size: 15spx;
+}
+.post .author {
+margin: 0 0 12px;
+font-weight: 700;
+ 
+}
+
+.flip-container {
+perspective: 1000px;
+margin-bottom: 16px;
+}
+.flip-container:hover .flipper {
+transform: rotateY(180deg);
+}
+.flipper {
+transition: transform 0.6s;
+transform-style: preserve-3d;
+position: relative;
+}
+.front, .back1, .back2, .back3 {
+backface-visibility: hidden;
+}
+.back1 {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+transform: rotateY(180deg);
+background-color: #CDD592;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 10px;
+box-sizing: border-box;
+font-size: 15px;
+color:#1B062B;
+font-family: Playwrite IN;
+}
+
+.back2 {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+transform: rotateY(180deg);
+background-color: #60866A;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 10px;
+box-sizing: border-box;
+font-size: 15px;
+color:#C4D168;
+font-family: Playwrite IN;
+}
+
+.back3 {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+transform: rotateY(180deg);
+background-color: #90C7B7;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 10px;
+box-sizing: border-box;
+font-size: 15px;
+color:#2C647C;
+font-family: Playwrite IN;
+}
+
+.post img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+h4 {
+    font-family: Playwrite IN;
+}
+
+.author {
+    font-family: "Playwrite ID", cursive;
+}
+
+.opis {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 1.4;
+    font-family: Playwrite IN;
+}
+
+.about {
+    text-align: center;
+    font-size: 50px;
+}
+
+      .gridmain {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      }
+
+      @media (max-width: 768px) {
+        .grid,
+        .gridmain {
+          grid-template-columns: 1fr;
+        }
+
+        .opis,
+        article p,
+        article h1,
+        article h2,
+        article h3,
+        .footnotes,
+        blockquote {
+          width: 100%;
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+
+      a, a:visited {
+        text-decoration: none;
+        color: black;
+      }
+      a:hover, a:active {
+        text-decoration: underline;
+      }
+
+            .photo {
+      text-align: center;
+      padding: 20px 0;
+      }
+      .photo img {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      }
+
+      
+ 
+
+article p {
+font-size: 22px;
+width: 40%;
+margin: 0px auto;
+font-size: 17px;
+text-align: justify;
+}
+
+article p img {
+width: 120%;
+height: auto;
+display: relative;
+margin: 20px 0;
+margin-left: -100px;
+}
+
+article h1 {
+    width: 70%;
+    font-size: 42px;
+    margin: 0px auto;
+    font-family: Playwrite IN
+}
+
+article h2 {
+    width: 70%;
+    font-size: 25px;
+    margin: 0px auto;
+    font-family: Playwrite IN
+}
+
+article h3 {
+    width: 60%;
+    margin: 0px auto;
+    font-size: 22px;
+    text-align: justify;
+    font-family: Playwrite IN
+}
+
+.footnotes {
+    width: 55%;
+margin: 0px auto;
+font-size: 15px;
+}
+
+blockquote {
+    width: 140%;
+    font-size: 19px;
+    margin: 0px auto;
+    margin-left: -100px;
+    margin-right: 1000px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: "Playwrite US Modern";
+}
+      
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <section class="menu">
+        
+      <a href="/magazynulga/wstep/">Wstęp</a>
+       
+      <a href="/magazynulga/o-nas/">O nas</a>
+       
+      </section>
+
+      <section class="logo">
+      <a href="/">
+        <img src="/magazynulga/ulga_logo.svg" alt="Przekreślone tłuste litery napisu „Ulga”, logotyp magazynu">
+      </a>
+      </section>
+    </header>
+
+    <main>
+      
+  <article>
+    <h1>Rura już nie musi</h1>
+    <h2>Społeczność Wixapolu jako wspólnota na ulgowych zasadach</h2>
+    <h3>Marta Łuszcz</h3>
+    <div><h3 id="wixapol-można-potraktować-jako-przestrzeń-szeroko-rozumianej-ulgi-wspólnotę-która-rządzi-się-swoimi-prawami-partycypacja-w-niej-to-sposób-na-wyjście-z-rutyny-nie-tylko-codziennych-oczekiwań-i-obowiązków-ale-też-standardów-polskiego-nocnego-życia-którym-bynajmniej-nie-rządzi-tylko-merkantylizm-i-uprzedzenia">Wixapol można potraktować jako przestrzeń szeroko rozumianej ulgi, wspólnotę, która rządzi się swoimi prawami. Partycypacja w niej to sposób na wyjście z rutyny, nie tylko codziennych oczekiwań i obowiązków, ale też standardów polskiego nocnego życia, którym bynajmniej nie rządzi, tylko merkantylizm i uprzedzenia.</h3>
+<p>,,Join our trip to this weird place
+Back to nature where we can be
+Faster and harder, louder and free”</p>
+<p>Powyższy fragment, zaczerpnięty z wydanego w 1996 roku utworu Back In The UK niemieckiej grupy Scooter, w pierwotnym zamierzeniu odnosi się do zdominowanej przez formułę free party <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> brytyjskiej sceny muzyki elektronicznej. Mimo że od powstania utworu minęło 30 lat, zawarty w nim przekaz dobrze oddaje istotę Wixapolu, czyli kolektywu nie tylko zarządzających nim DJ-ów, Mikouaja Rejwa, Torrentz.eu i Sporty Spice, ale także wszystkich osób uczestniczących w jego wydarzeniach i społeczności.</p>
+<p>Pierwsza, oficjalnie zorganizowana pod szyldem wixapolu impreza odbyła się w 2014 roku, w nieistniejącym już klubie Parking Bar, jednak, jak mówią jego pomysłodawcy, sama idea kolektywu narodziła się w okolicach 2012 - 2013 roku, w sprzyjających awangardzie i kreatywnemu myśleniu okolicznościach afteru. Dwuczłonowa nazwa grupy bezpośrednio nawiązuje do potransformacyjnych, polskich firm epoki dzikiego kapitalizmu, w internecie prześmiewczo określanych mianem Januszex/Januszpol, oraz zapożyczonego z języka niemieckiego, pierwotnie wulgarnego słowa wixa, które w naszej kulturze <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> już od lat 90 odnosi się do zabaw przy szybkiej muzyce elektronicznej.
+Wspomniana przeze mnie polska scena klubowa w opinii większości współczesnej “publiki” opiera się na organizowanych w wielkomiejskich lokalach, egzaltowanych wydarzeniach ze sztywną selekcją i znanymi nazwiskami w lineupie. Zjawisko imprez organizowanych w specyficznych dla mniejszych ośrodków (jednak o paradoksalnie pokaźnej pojemności) klubach, takich jak Protektor Uniejów, Omen Płośnica czy Ekwador Manieczki <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>, spychane jest na peryferyjny śmietnik historii “wiejskiego techno” i sprowadzane do niskolotnej, heretyczno-prymitywnej rozrywki dla prowincji. Jednak pomimo uprzedzenia “wyższych” sfer do wydarzeń tego typu, co weekend odwiedzają je tysiące osób.</p>
+<p><strong>Wixapol od swoich początków funkcjonuje jako inicjatywa o egalitarnym profilu, przez co rozumiem brak uprzedzenia nie tylko do konkretnych grup ludzi,</strong> takich jak osoby odwiedzające miejsca pokroju wspomnianych wyżej lokali<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>, <strong>ale także odejście od wszechobecnego w lukratywnych, elitarnych klubach ścisłego dresscode’u czy puryzmu gatunkowego.</strong> Współczesny dyskurs kulturoznawczy zrywa z dychotomią kultura wysokakultura niska, traktując to rozróżnienie jako bezrefleksyjne i klasistowskie, a Bunt mas Gasseta <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> jako tekst archaiczny. Pokrywa się to z wixapolską wersją kultury, która jest pozbawiona hierarchiczności, co dotyczy nie tylko wspomnianego odrzucenia dystynkcji stylu ubioru czy życia, ale też właściwej dla kolektywu komunikacji wizualnej i językowej.</p>
+<p>W charakterystycznej, pozbawionej reguł ortografii i gramatyki wixapolskiej mowie można doszukać się inspiracji polskimi futurystami, szczególnie jednodniówką Nuż w bżuhu <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>, która stanowiła źródło tytułu jednej z imprez (Nuż w uhu); w celowych aberracjach polszczyzny, pojawiających się na social mediach i merchu, chodzi jednak głównie o modernizację i zabawę językiem, dopasowanie ich do pędu i ducha młodych, przychodzących na imprezy osób. Sztywne zasady gramatyczne kolektyw traktuje jako kolejne narzędzie dyscypliny, której chce się przeciwstawiać. Jako przykład zacytuję zeszłoroczny wpis wixapolu, zamieszczony w okolicach Narodowego Święta Niepodległości:</p>
+<p><img src="images/img3.jpg" alt="facebook"></p>
+<p>Przytoczony wyżej jeden z facebookowych postów poprzez zabawę językiem dobrze obrazuje politykę tożsamościową wixapolu. <strong>W kontrze do zachodnich aspiracji wielu klubów i imprez,</strong> tu mam na myśli zarówno sztywne imprezy, na których grane jest minimal techno, jak i inicjatywy kurczowo trzymające się holenderskiego gabberu, <strong>Wixapol można określić jako ultra polski, oczywiście absolutnie nie w sensie krzewienia nacjonalizmu, tylko afirmatywnej postawy wobec tego, co polskie, ze wszystkimi urokami i słabościami, jakie ten epitet w sobie mieści.</strong> Pomimo tego, że przychodząc na imprezy wiele osób decyduje się na odtwarzanie nostalgicznych, typowych dla chociażby thunderdome <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup> ortalionowych strojów, a w tracklistach często pojawiają się klasyki zagranicznych gatunków, nie brakuje wśród nich koszulek z Janem Pawłem II czy sampli z polskiego internetu. Wspomniane żarty z papieża funkcjonują na zasadzie anarchistycznego sprzeciwu wobec wpajanego młodym kultu postaci, której zjawisko jest im odległe, a majestat podważony przez związane z nią kontrowersje.</p>
+<p>W 2017 roku, na łamach “Gazety Wyborczej”, ukazał się tendencyjny artykuł o, zapewne mającym siać postrach wśród zatroskanych rodziców i niezaznajomionych z działaniami kolektywu czytelników, tytule: Kreska z telefonu. Narkotyki na Wixapolu, najbardziej pożądanych imprezach w Polsce. Jego autorka, Ewa Kaleta, wychodzi od z góry przyjętych założeń na temat odległego jej środowiska. Całą inicjatywę traktuje protekcjonalnie, sprowadzając ją do strefy bezrefleksyjnego przyzwolenia na swobodne zażywanie substancji psychoaktywnych. Dziennikarka przywołuje fikcyjny wywiad z założycielami Wixapolu, w którym mieli określić poruszanie tematu narkotyków na swoich imprezach jako “szukanie sensacji”, co, gdyby nie patetyczny charakter całego materiału, uznałabym za autoironię. Nonszalanckie podejście kolektywu do wspomnianego zagadnienia podważa jego wieloletnia współpraca ze Społeczną Inicjatywą Narkopolityki <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>, organizacją zajmującą się szeroko pojętym party-workingiem i rozpowszechnianiem wiedzy na temat bezpiecznego użytkowania substancji psychoaktywnych. Wbrew tezie Kalety,  wyraźnie oznaczone stanowiska wolontariuszy wyszkolonych w kierunku postępowania z odurzonymi uczestnikami imprezy nie zachęcają ich do narkotyzowania się, a redukują szkody wśród osób nietrzeźwych i uświadamiają wszystkie inne o skutkach zażywania substancji psychoaktywnych. Akceptacja niemożliwego do wyeliminowania problemu i działanie w kierunku zminimalizowania wynikających z niego strat, w kontrze do, powszechnej na większości polskich imprez, ignorancji i wygodnego dla wizerunku “zamiatania pod dywan” odnosi wymierne, pozytywne skutki.</p>
+<p>Odniesienie słowa ulga do działalności Wixapolu wzbogaca jego encyklopedyczną definicję o nowy kontekst. Ulga przestaje być jedynie przeciwieństwem napięcia, na potrzeby tekstu rozumianego przeze mnie jako toksyczna kultura sporej części polskich imprez z muzyką elektroniczną, a zaczyna określać nową jakość klubowania opartą nie tylko na egalitarności, ale przede wszystkim zabawie, która w końcu powinna być fundamentem wspomnianych inicjatyw.</p>
+<p><img src="images/IMG_4167.PNG" alt="fotografia czterech, ekscentrycznie ubranych osób na jednej z imprez Wixapolu">
+<img src="images/IMG_4166.PNG" alt="zdjęcie zrobione na platformie Wixapolu podczas łódzkiej Parady Wolności; przedstawia osobę przebraną za buritto otoczoną innymi, bawiącymi się uczestnikami imprezy"></p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Z ang. “wolna impreza”; free w nazwie odnosi się przede wszystkim do wolnego powietrza, jednak wydarzenia w tej formule są też pozbawione biletowanego wstępu, dresscodeu i panujących w zamkniętych klubach sztywnych zasad i selekcji.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>Tu: polskiej.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>Ważny jako zjawisko kulturowe, jednak odbiegający kontekstowo od pozostałych dwóch, przytoczonych klubów przykład, a to z powodu większej legitymizacji i uznania wśród “elitarnych” środowisk.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>Wixapol w przeszłości organizował wydarzenia takie jak Hard Techno Mission w Protectorze Uniejów, oraz zapraszał na swoje imprezy legendy sceny tzw. “manieczek” takie jak, świętej pamięci, DJ Hazel, czy DJ Noiserr.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5">
+<p>W Buncie mas José Ortega y Gasset wskazuje, że masowy człowiek odrzuca wartości kultury wysokiej, dążąc do ujednolicenia i uproszczenia życia. Bunt mas prowadzi więc do zaniku elitarnej, twórczej kultury wysokiej na rzecz kultury niskiej, masowej, łatwej i pozbawionej ambicji intelektualnych.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6">
+<p>Polscy futuryści bawili się językiem poprzez rozbijanie składni, fonetyczny zapis słów, neologizmy i świadome łamanie norm ortograficznych.&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7">
+<p>Thunderdome to organizowany od 1992 roku holenderski cykl imprez i festiwali muzycznych wydający swoje składanki (głównie z gatunku hardcore) i charakteryzujący się odpowiadającą niderlandzkim rejwom estetyką.&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:8">
+<p>Wcześniej: Studencka Inicjatywa Narkopolityki.&#160;<a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+</div>
+  </article>
+
+    </main>
+
+    <footer>
+
+      <section class="logo">
+      <a href="/">
+        <img src="/magazynulga/ulga_logo.svg" alt="Przekreślone tłuste litery napisu „Ulga”, logotyp magazynu">
+      </a>
+      </section>
+
+      <section class="bottom">
+        <div><a href="https://wbask.asp.waw.pl/" target="_blank">WBASK</a></div>
+        <div>2026</div>
+      </section>
+
+    </footer>
+  </body>
+</html>
