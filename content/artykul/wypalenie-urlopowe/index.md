@@ -1,0 +1,60 @@
+---
+title: "Wypalenie urlopowe, czyli dlaczego stresujemy się na wakacjach"
+author: "Wiktoria Szlagowska"
+cover: "img/cover.jpg"
+---
+### Wakacje powinny przynosić ukojenie w świecie pełnym bodźców, ale coraz częściej okazuje się, że urlopy mogą być nawet bardziej męczące i stresujące od zwykłego dnia w pracy. Wyróżnia się różne typy wyjazdów,  a każdy z nich oczywiście ma plusy i minusy. Skąd bierze się tak zwany Summer Stress Syndrome i dlaczego ekscytująca podróż staje się naszą udręką?
+
+ Stres związany z wakacjami to jedno z bardziej powszechnych i globalnych zjawisk – dotyka osoby każdej płci i w każdym wieku, jest niezależny od kierunku wyjazdu czy sytuacji finansowej. Po prostu stresujemy się wyrwaniem z codzienności – pojawieniem się w innym miejscu na określony czas, a potem powrotem do domu, do zwykłej rutyny. Problem wydaje się trywialny; przecież to głupie stresować się czymś, co w założeniu ma przynieść ulgę. Jednakże wystarczy odrobina wyobraźni i wizualizacja, że za dziesięć godzin czeka nas daleka podróż, a automatycznie nasze ciało wyśle nam sygnały kojarzone ze stresem.
+
+ Założeniem wakacji jest wypoczynek, reset, spędzenie czasu z rodziną i przyjaciółmi czy poczucie namiastki wolności. Urlopy dla różnych klas społecznych są wytworem XX wieku; wcześniej na wakacje mogła pozwolić sobie jedynie arystokracja. To, że podróże są obecnie dostępne dla każdej osoby pracującej, jest wynikiem ewolucji prawa pracy i postulatów ruchów robotniczych na przestrzeni dziesiątek lat. Pionierami płatnych urlopów byli Holendrzy, potem dołączyła Wielka Brytania, następnie Francja; Polacy otrzymali to prawo w 1922 roku (oczywiście ustawa nie dotyczyła wszystkich stanowisk pracy, jednak z biegiem lat grupa się poszerzała). Tak zaczął raczkować przemysł turystyczny, który bezpowrotnie wpłynął na globalną gospodarkę, kulturę, bezpieczeństwo i politykę. Obecnie mówimy o masowym turyzmie, który odciska piętno we wszystkich zakątkach świata.
+
+ Dzięki rosnącej popularności podróżowania wiele osób zyskało pracę i poprawiło swój standard życia; jednakże po takim czasie możemy stwierdzić śmiało, że pozytywne skutki turyzmu zaczęły być wypierane przez te negatywne. Masowe podróże mają głównie wpływ na środowisko, niszcząc dorobki kulturalne, faunę i florę; jest to jednak zupełnie odrębny temat. W niniejszym artykule pragnę skupić się na tym, jak urlopy i wakacje wpływają na naszą psychikę oraz dlaczego często nie odczuwamy dzięki nim ulgi i satysfakcji.
+
+> Warto zacząć od tego, że istnieją różne typy wyjazdów, a każdy z nich niesie za sobą szereg różnorodnych koszmarów dla naszego spokoju.
+
+ Wakacje możemy podzielić między innymi ze względu na czas ich trwania. Już na tym etapie wyłaniają się powody, dla których zarówno krótki urlop przysporzy nam stresu, jak i ten długi. Wyjeżdżając gdzieś na kilka dni i tak trzeba pokonać drogę do naszego celu oraz tę powrotną, a na miejscu docelowym spędzimy zaledwie kilka chwil. Dużo nerwów związanych z pakowaniem, organizacją, kosztami oraz oderwaniem się od rzeczywistości – tylko dla tych przysłowiowych trzech dni.
+
+ Z drugiej strony wyjazd na dłuższy okres wydaje się pozornie podróżą, która przyniesie nam więcej ulgi i ukoi oderwaniem od rzeczywistości. Jednakże, egzystując gdzieś w świecie przez kilka tygodni, możemy zupełnie odzwyczaić się od naszego ,,prawdziwego” życia.
+
+ Również forma aktywności lub jej brak wpływa na emocje odczuwane podczas podróży. Globalne tendencje wskazują na to, że częściej decydujemy się na urlopy wypoczynkowe niż na te zakładające intensywne zwiedzanie czy aktywności sportowe. Osoby decydujące się na pierwszą formę częściej będą odczuwały stres po powrocie do domu niż grupa decydująca się na aktywny wypoczynek. Wynika to z faktu, iż takie wakacje mogą wydawać się mniej stresujące – nie wymagają przygotowania ani dokładnego planu wycieczki, a zakładają pobyt w jednym miejscu i odpoczynek w miłej atmosferze. Jest to coś na podobieństwo pokrzepiającego czasu w raju. Powstrzymujemy się wówczas od jakichkolwiek myśli o realnych problemach, stajemy się innymi ludźmi. Obserwujemy inne osoby w naszych resortach – nic nas z nimi nie łączy, są dla nas obcy, ale łączy nas z nimi pewnego rodzaju inkluzywność.
+
+ Człowiek bardzo szybko adaptuje się do otaczającej go rzeczywistości. Hotele, które oferują szereg udogodnień, powodują szybkie przyzwyczajenie się do zupełnie innego życia – takiego, w którym zostajemy wyręczeni w wykonywaniu niemal wszystkich codziennych czynności.
+
+> Sprzątanie, gotowanie, pranie – to wszystko podczas ekskluzywnego urlopu znika z naszego życia; pojawiają się problemy innej natury: co zamówić w restauracji, na jakiego drinka mam ochotę, czy wolę opalać się w basenie na dachu, czy na prywatnej plaży?
+
+ Po zakończonym urlopie następuje gwałtowne zderzenie z rzeczywistością; każdy ma swoją, ale problemy są podobne: pogoń za karierą, irytacja na brak czasu, spóźniająca się komunikacja miejska, wizyta kontrolna u lekarza, zepsuty odkurzacz w domu, goniące deadline’y i brak porządku w szafie.
+
+Analogicznie aktywne wakacje wiążą się głównie ze stresem przed i w trakcie podróży. Dzień przed wyjazdem zaczynamy zadawać sobie pytania – najróżniejsze – aż w końcu dochodzimy do ważnego wniosku: po co w ogóle nam takie wakacje? Miliony problemów z pakowaniem odpowiedniego sprzętu i ubrań, organizacja czasu, która zawsze przecież mogłaby być lepsza, bo zawsze w te trzydzieści minut można wpisać na listę dodatkowy zabytek lub kolejne kilometry przejechane rowerem.
+
+ Najlepsze atrakcje dzieją się jednak podczas wyjazdu: obsesyjne sprawdzanie, czy nic nie zgubiliśmy; lęk przed zatruciem pokarmowym po spróbowaniu nowych potraw; strach przed udarem słonecznym; użądleniem przez pszczołę; opóźnionym lotem, który uniemożliwia przesiadkę w pociąg; wypożyczalnią samochodową, która oszukała nas z ceną wynajmu; hostelem, który pomylił rezerwację; pogodą, która nakazuje nam siedzieć w pięciometrowym pokoju zamiast zdobywać górskie szczyty. A to wszystko jest jedynie wierzchołkiem góry lodowej.
+
+ Kolejne zagadnienie to kwestia tego, z kim decydujemy się pojechać. Tutaj każda osoba i każdy typ relacji niosą za sobą zagrożenie. Podróż ze znajomymi ciągnie za sobą tyle problemów, że większość wyjazdów finalnie nigdy nie dochodzi do skutku. W przypadku organizacji wyjazdu w kilkuosobowej grupie najbardziej problematyczna jest organizacja przed wyjazdem – już od samego początku. Dopasowanie terminu dogodnego dla każdej osoby, dostosowanie pod względem finansowym, uzgodnienie warunków, w jakich chcemy spać, oraz transportu, na który się zdecydujemy. Taki typ podróży można opisać jednym słowem – kompromis; w innym przypadku musimy być przygotowani na to, że w newralgicznych momentach nasze przyjaźnie mogą zawisnąć na włosku.
+
+Z drugiej strony, jeśli zdecydujemy się na wakacje z rodziną, musimy mieć mocne nerwy. Rodzice na pewnym etapie życia mogą mieć zupełnie inny styl życia i inne priorytety; tutaj również najwygodniej iść na kompromisy.
+
+Wyjazd z osobą partnerską może wydawać się najprostszy – w końcu podróżujemy tylko z jedną osobą. Nic bardziej mylnego. Zapewne wielu z nas doświadczyło sprzeczek z partnerem na wakacjach lub było świadkami ostrych wymian zdań na lotnisku czy w innych podobnych przestrzeniach.
+
+Psycholodzy wytworzyli dwa terminy opisujące stres związany z wakacjami: Summer Stress Syndrome oraz Summer Anxiety. Na stronie „Columbia Mental Health” opublikowano artykuł, w którym opisano podstawowe symptomy stresu wakacyjnego. Wymieniono m.in.: brak energii, przestymulowanie, irytację, dyskomfort psychiczny, ataki paniki, wzmożony niepokój i pobudzenie organizmu oraz wyścig myśli. Jednak wszystkie negatywne emocje i odczucia mają swoje korzenie, które głównie biorą się ze zmiany stylu życia w okresie wakacyjnym. Odejście od rutyny może wzmagać, zwłaszcza u młodych osób, uczucie zagubienia i niepewności. Dodatkowo pojawić się może presja związana z ciałem i ogólnym wyglądem sylwetki; spędzanie czasu na plaży i basenie jedynie w kostiume kąpielowym może powodować u częsci z nas dyskomfort. Do tego wszystkiego dochodzą obciążenia finansowe, dużo rozmaitych wydatków, dodatkowo napędzanych przez masowy konsumpcjonizm i presję narzuconą przez social media. Kolejny ważny aspekt – zmiany klimatyczne, a często nawet i duże zmiany godzin; co często powoduje duże zamieszanie dla naszych organizmów. Podczas podróży często zmagamy się z przeciążeniem sensorycznym – więcej bodźców smakowych, zapachowych, świetlnych, a zwłaszcza dźwiękowych, przy utrudnionej możliwości wyciszenia się.
+
+Wszystko jest oczywiście mocno indywidualne, uzależnione od naszego charakteru, upodobań i ogólnej odporności na stres; myślę jednak, że wszyscy możemy utożsamić się z co najmniej jednym z tych punktów.
+
+Artykuł proponuje ponadto kilka rozwiązań, które mogą pomóc w radzeniu sobie z Summer Anxiety. Przede wszystkim powinniśmy  trzymać się regularnego, codziennego planu dnia – nawet w weekendy; pomocne jest wstawanie i kładzenie się spać o podobnych porach. Dodatkowo warto stosować zasłony zaciemniające lub opaski na oczy, które blokują światło słoneczne i zapewniają bardziej komfortowy sen. Artykuł kładzie nacisk głównie na wysokie temperatury, silnie kojarzone z okresem wakacyjnym; wówczas pomocne jest unikanie aktywności w najgorętszych porach dnia, picie dużej ilości wody, ograniczenie spożycia kofeiny i alkoholu oraz noszenie przewiewnych ubrań.
+
+Psycholożka Joanna Płatek w artykule Summer Stress Syndrome wyjaśnia, że aż 80% Polaków odczuwa zdenerwowanie przed wyjazdem na wakacje. Rozpędzenie zawodowe popycha nas w kierunku rozpędzenia wakacyjnego; stresuje nas nuda i zapominamy, po co w ogóle wyjeżdża się na wakacje. Podczas wyjazdu trudne jest to, że nie wszystko możemy mieć pod kontrolą – zawsze pojawiają się nieoczekiwane sytuacje, a do tego dochodzą nerwy związane z finansami i nieplanowanymi wydatkami, przy jednoczesnym przekonaniu, że wakacje muszą być idealne i zawsze „naj”.
+
+> Stres związany z wakacjami łączy się również mocno z naszą fizjologią. Lęk i podekscytowanie są odczuwane przez nasz organizm bardzo podobnie – w ciele pojawia się wysokie pobudzenie, a emocje aktywują się w zbliżonych sytuacjach
+
+Lęk objawia się także niepewnością i niskim poczuciem kontroli. Natomiast ekscytacja pojawia się wtedy, gdy oczekujemy pozytywnej sytuacji lub jesteśmy w trakcie czegoś bardzo emocjonującego, jak na przykład wyjazd na wakacje. Może powodować łatwiejsze podejmowanie decyzji; niektórzy stają się nawet impulsywni i zgadzają się na wiele rzeczy.
+
+To kolejny powód dla odczuwanego lęku przed podróżą: wiele rzeczy nas stresuje, ale jesteśmy jednocześnie podekscytowani. Nasz mózg wysyła sygnały, a ciało interpretuje je jako stres i ekscytację jednocześnie; przez cały czas pozostajemy więc na fali pobudzenia. Prowadzi to do kolejnych problemów, takich jak zaburzenia snu, które dodatkowo wzmagają stres. Tworzy się efekt domina – wszystkim dobrze znany chaos i roztargnienie towarzyszące niemal każdej podróży.
+
+Sytuacja nie jest jednak bez wyjścia. Z każdą kolejną podróżą uczymy się czegoś więcej; każdy błąd, staje się kolejną lekcją. Brzmi to banalnie, ale wszyscy jesteśmy tylko ludźmi i popełniamy błędy –  ważne jest to, by ich nie powtarzać.
+
+##### Bibliografia:
+
+- Plany wakacyjne Polaków, dostęp: 08.01.2026.
+- [Summer stress syndrome. „Kiedy urlop staje się udręką” , dostęp: 08.01 2026.](https://www.polskieradio.pl/10/10333/artykul/3395480,summer-stress-syndrome-kiedy-urlop-staje-się-udręką)
+- [Summer Stress Syndrome, „Howstuffworks” , dostęp: 08.01 2026.](https://health.howstuffworks.com/wellness/stress-management/summer-stress-syndrome.htm)
+- [What is Summer Anxiety?, „Columbia Mental Health” , dostęp: 8.01.2026.](https://www.columbiapsychiatry-dc.com/counseling-blog/what-is-summer-anxiety/)
+- [World Tourism Barometer , dostęp: 8.01.2026.](https://www.untourism.int/un-tourism-world-tourism-barometer-data)

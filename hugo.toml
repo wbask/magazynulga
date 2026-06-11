@@ -1,0 +1,13 @@
+baseURL = 'https://wbask.github.io/magazynulga/'
+languageCode = 'pl'
+title = 'Magazyn „Ulga”'
+
+[[menus.main]]
+name = "Wstęp"
+url = "/wstep/"
+weight = 20
+
+[[menus.main]]
+name = "O nas"
+url = "/o-nas/"
+weight = 30

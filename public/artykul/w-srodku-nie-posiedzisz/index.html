@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W środku nie posiedzisz / Magazyn „Ulga”</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <style>
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+line-height: 1.6;
+}
+.menu, .bottom {
+display: flex;
+justify-content: space-between;
+padding: 20px;
+background-color: white;
+text-transform: uppercase;
+font-size: 24px;
+}
+.logo {
+text-align: center;
+padding: 40px 0;
+}
+.logo img {
+width: 100%;
+max-width: 800px;
+height: auto;
+}
+.grid {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 20px;
+padding: 20px;
+max-width: 1200px;
+margin: 0 auto;
+}
+.post {
+border: 1px solid #ddd;
+padding: 20px;
+background-color: white;
+}
+.post h4 {
+margin: 0 0 8px;
+font-size: 15spx;
+}
+.post .author {
+margin: 0 0 12px;
+font-weight: 700;
+ 
+}
+
+.flip-container {
+perspective: 1000px;
+margin-bottom: 16px;
+}
+.flip-container:hover .flipper {
+transform: rotateY(180deg);
+}
+.flipper {
+transition: transform 0.6s;
+transform-style: preserve-3d;
+position: relative;
+}
+.front, .back1, .back2, .back3 {
+backface-visibility: hidden;
+}
+.back1 {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+transform: rotateY(180deg);
+background-color: #CDD592;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 10px;
+box-sizing: border-box;
+font-size: 15px;
+color:#1B062B;
+font-family: Playwrite IN;
+}
+
+.back2 {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+transform: rotateY(180deg);
+background-color: #60866A;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 10px;
+box-sizing: border-box;
+font-size: 15px;
+color:#C4D168;
+font-family: Playwrite IN;
+}
+
+.back3 {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+transform: rotateY(180deg);
+background-color: #90C7B7;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 10px;
+box-sizing: border-box;
+font-size: 15px;
+color:#2C647C;
+font-family: Playwrite IN;
+}
+
+.post img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+h4 {
+    font-family: Playwrite IN;
+}
+
+.author {
+    font-family: "Playwrite ID", cursive;
+}
+
+.opis {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 1.4;
+    font-family: Playwrite IN;
+}
+
+.about {
+    text-align: center;
+    font-size: 50px;
+}
+
+      .gridmain {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      }
+
+      @media (max-width: 768px) {
+        .grid,
+        .gridmain {
+          grid-template-columns: 1fr;
+        }
+
+        .opis,
+        article p,
+        article h1,
+        article h2,
+        article h3,
+        .footnotes,
+        blockquote {
+          width: 100%;
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+
+      a, a:visited {
+        text-decoration: none;
+        color: black;
+      }
+      a:hover, a:active {
+        text-decoration: underline;
+      }
+
+            .photo {
+      text-align: center;
+      padding: 20px 0;
+      }
+      .photo img {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      }
+
+      
+ 
+
+article p {
+font-size: 22px;
+width: 40%;
+margin: 0px auto;
+font-size: 17px;
+text-align: justify;
+}
+
+article p img {
+width: 120%;
+height: auto;
+display: relative;
+margin: 20px 0;
+margin-left: -100px;
+}
+
+article h1 {
+    width: 70%;
+    font-size: 42px;
+    margin: 0px auto;
+    font-family: Playwrite IN
+}
+
+article h2 {
+    width: 70%;
+    font-size: 25px;
+    margin: 0px auto;
+    font-family: Playwrite IN
+}
+
+article h3 {
+    width: 60%;
+    margin: 0px auto;
+    font-size: 22px;
+    text-align: justify;
+    font-family: Playwrite IN
+}
+
+.footnotes {
+    width: 55%;
+margin: 0px auto;
+font-size: 15px;
+}
+
+blockquote {
+    width: 140%;
+    font-size: 19px;
+    margin: 0px auto;
+    margin-left: -100px;
+    margin-right: 1000px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: "Playwrite US Modern";
+}
+      
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <section class="menu">
+        
+      <a href="/magazynulga/wstep/">Wstęp</a>
+       
+      <a href="/magazynulga/o-nas/">O nas</a>
+       
+      </section>
+
+      <section class="logo">
+      <a href="/">
+        <img src="/magazynulga/ulga_logo.svg" alt="Przekreślone tłuste litery napisu „Ulga”, logotyp magazynu">
+      </a>
+      </section>
+    </header>
+
+    <main>
+      
+  <article>
+    <h1>W środku nie posiedzisz</h1>
+    <h2>Jak ze stacji kolejowych na linii otwockiej zniknęły poczekalnie</h2>
+    <h3>Bartłomiej Kulmatycki</h3>
+    <div><h3 id="linią-otwocką-podróżują-codziennie-dziesiątki-tysięcy-pasażerów-mimo-to-poczekalnie-na-jej-przystankach-od-kilku-lat-stoją-zamknięte-mimo-dużej-wartości-historycznej-i-użytkowej-lata-zaniedbań-pozostawiły-je-w-opłakanym-stanie-a-pasażerowie-czekający-w-mroźne-dni-na-pociągi-zadają-sobie-pytanie-czy-jeszcze-kiedyś-posiedzę-w-cieple">Linią otwocką podróżują codziennie dziesiątki tysięcy pasażerów. Mimo to poczekalnie na jej przystankach od kilku lat stoją zamknięte. Mimo dużej wartości historycznej i użytkowej, lata zaniedbań pozostawiły je w opłakanym stanie, a pasażerowie, czekający w mroźne dni na pociągi, zadają sobie pytanie: czy jeszcze kiedyś posiedzę w cieple?</h3>
+<p>Otwocka linia kolejowa znana jest przede wszystkim ze swoich przedwojennych, modernistycznych budynków wiat i poczekalni. Codziennie są one mijane przez masy podróżnych, dojeżdżających z Wawra, Otwocka, Józefa i okolic do pracy czy szkoły w centralnych częściach Warszawy. Niestety drzwi poczekalni są dla nich zamknięte już od kilku lat.</p>
+<p>W celu lepszego zrozumienia tematu, warto krótko przybliżyć historię otwockiej linii kolejowej. Początki omawianej linii możemy datować na 1877 rok i otwarcie Żelaznej Drogi Nadwiślańskiej, która przebiegała od Mławy, przez Warszawę i Lublin, do Kowla. „Budowa nowego typu przystanków i wiat peronowych związana była z realizacją koncepcji prof. Aleksandra Wasiutyńskiego budowy linii średnicowej oraz elektryfikacją węzła warszawskiego, którego pomysłodawcą i inicjatorem był prof. Roman Podoski. W 1921 r. opracował on projekt elektryfikacji Warszawskiego Węzła Kolejowego, którego głównym założeniem było rozpoczęcie elektryfikacji sieci PKP, a przede wszystkim zapewnienie obsługi żywiołowo rozwijającego się w dwudziestoleciu międzywojennym ruchu podmiejskiego”<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+<p><img src="img/1.jpg" alt="Uroczystość na stacji w Józefowie. Na peronie widoczni przedstawiciele rządu m.in. minister komunikacji Juliusz Ulrych i zaproszeni goście. Widoczny udekorowany godłem państwowym i flagą pociąg (elektryczny zespół trakcyjny) E-91., 15.12.1936 r."></p>
+<blockquote>
+<p>Każda poczekalnia na linii otwockiej mogła zmieścić w środku około 20 osób na miejscach siedzących oraz około 30 osób stojących. Poza poczekalniami i kasami biletowymi na niektórych stacjach przewidziano inne udogodnienia dla pasażerów, jak sklepik na przystanku Międzylesie czy barek na stacji Miedzeszyn.</p></blockquote>
+<p>Nowe elektryczne zespoły trakcyjne przystosowane były do kursowania na liniach z wysokimi peronami (pozbawione schodków), wymagane więc było zbudowanie nowych stacji. Większość z nich miała formę peronów wyspowych. Wszystko to miało na celu przyspieszyć wymianę potoków pasażerów<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. Zaprojektowano również żelbetowe wiaty połączone z budynkami poczekalni i kas bezpośrednio na peronach. Charakterystyczny, dwuskrzydłowy dach wiaty wsparto na rzędzie filarów, który dzielił peron na dwie strefy. Murowane budynki kas i poczekalni, stanowiące całość z wiatami, zbudowane w stylu streamline, przywodzą swoim wyglądem na myśl nadwozia ówczesnych wagonów osobowych<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. Każda poczekalnia mogła zmieścić około 20 osób na miejscach siedzących oraz około 30 osób stojących. Poza poczekalniami i kasami biletowymi na niektórych stacjach przewidziano inne udogodnienia dla pasażerów, jak sklepik na przystanku Międzylesie czy barek na stacji Miedzeszyn<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.</p>
+<p>II wojna światowa nie pozwoliła jednak dokończyć budowy wszystkich przystanków (na przystanku Warszawa Anin nigdy nie powstała planowana wiata i poczekalnia) oraz przyniosła wielkie zniszczenia, gdy „na linii  Warszawa Wschodnia – Otwock w lipcu 1944 r. wojska niemieckie niszczyły tory kolejowe, urządzenia oraz budynki. Przy pomocy dwóch pociągów pancernych i Schienenwolfa (specjalnego urządzenia do niszczenia toru kolejowego) ciągniętego przez lokomotywę przecinano podkłady w środku toru, szyny niszczono natomiast przy użyciu ładunków trotylu”<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>. Powojenna odbudowa nastąpiła bardzo szybko i już w 1946 roku uruchomiono trakcję elektryczną. Kilka lat później również wszystkie wiaty i poczekalnie na linii otwockiej zostały odbudowane, a na stacji Warszawa Olszynka Grochowska wybudowano nową wiatę z poczekalnią według projektu Kazimierza Brandta<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>.</p>
+<p>Przez długie lata, zgodnie z przedwojennymi założeniami projektowymi, pasażerowie mogli korzystać z udogodnień na stacjach linii otwockiej, jednak lata eksploatacji, bez odpowiedniego dbania o stan wiat i poczekalni, zaowocowały ich powolnym niszczeniem. Choć ciężko jest znaleźć dokładne informacje o tym, co z poczekalniami działo się w latach 90., to można założyć, że zmiana ustrojowa na pewno w niczym nie pomogła i losy stacji linii otwockiej były podobne do innych polskich stacji kolejowych w tamtym czasie – zapomniane i niszczejące. W 2010 roku „w związku z planami PKP PLK związanymi z modernizacją linii Warszawa Wschodnia – Lublin i dostosowaniem jej do prędkości 160 km/h władze kolejowe planowały likwidację peronów wyspowych, wiat oraz poczekalni na linii Warszawa Wschodnia – Otwock”<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>. Dzięki protestom społeczności lokalnej oraz wielu organizacji zajmujących się historią i architekturą sprawa zyskała rozgłos medialny, a stacje otwockiej linii kolejowej udało się wpisać do rejestru zabytków. W następnych latach niektóre budynki wiat i poczekalni zostały odnowione; niestety nie wszystkie.</p>
+<p><img src="img/2.jpg" alt=" Poczekalnia na stacji kolejowej Warszawa Radość (przed zamknięciem na lata), 01.04.2008r."></p>
+<blockquote>
+<p>W zamówieniu publicznym dla PKP PLK z 2025 roku, poczekalnie na linii otwockiej opisano jako nieużytkowane pustostany o średnim stanie technicznym, bez ogrzewania, z nieszczelną stolarką okienną i drzwiową, złą izolacją przeciwwilgociową i kilkoma innymi mankamentami.</p></blockquote>
+<p>Poczekalnia na stacji Warszawa Radość zamknięta jest od 2008 rok, o czym świadczą internetowe bazy kolejowe i zdjęcia tam dostępne<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>. W tym samym roku zamknięto najprawdopodobniej również poczekalnię na PKP Warszawa Miedzeszyn<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup>. Na stacji Otwock Świder remont przeprowadzono wcześniej w 2004 roku, gdyż poczekalnia była w dużo gorszym stanie od reszty na trasie. Po 2010 roku więc nie przeprowadzono tam żadnego remontu, a tamtejsza poczekalnia jest nieczynna od co najmniej 2012 roku, co potwierdzają relacje pasażerów oraz nie bezpośrednio dokumentacja fotograficzna zawarta w zamówieniu publicznym z 2025 roku dla PKP PLK<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup> (stan wnętrza poczekalni wskazuje na dłuższy okres nieużytkowania w porównaniu z resztą poczekalni uwzględnionych w dokumentacji). Na pozostałych stacjach (Warszawa Międzylesie, Michalin, Józefów) poczekalnie prawdopodobnie pozostawały w użytku aż do pandemii COVID-19, gdy ze względu na małą powierzchnię poczekalni najpierw wprowadzono limity ilości osób mogących przebywać wewnątrz, a później kompletnie zamknięto poczekalnie. Pandemia prawdopodobnie spowodowała też zakończenia działalności kawiarni i bistro działających wcześniej w poczekalniach na stacjach Józefów i Warszawa Międzylesie. Gdy pandemia zaczęła wygasać, okresowo otwierano i zamykano poczekalnie na tych stacjach otwockiej linii, mimo to od 2022/2023 roku wszystkie poczekalnie stoją zamknięte, z oknami zasłoniętymi blachami, deskami i kartonami. Prawdopodobnym powodem ich zamknięcia jest ich zły stan techniczny. W wymienionym wyżej zamówieniu publicznym opisano je jako nieużytkowane pustostany o średnim stanie technicznym, bez ogrzewania, z nieszczelną stolarką okienną i drzwiową, złą izolacją przeciwwilgociową i kilkoma innymi mankamentami<sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup>.</p>
+<p>Przykładem tego co ma stać się z poczekalniami na linii otwockiej jest poczekalnia na stacji Warszawa Olszynka Grochowska, która po remoncie została oddana do użytku w grudniu 2025 roku. Remont reszty poczekalni ma rozpocząć się w marcu 2026 roku a zakończyć w roku 2028. Plany zakładają, poza oczywistymi pracami konserwatorskimi i konstrukcyjno-budowlanymi, m. in. montaż instalacji grzewczej, instalację wentylacji mechanicznej, instalację zabezpieczeń przeciwpożarowych, montaż monitoringu i stworzenie systemu informacji pasażerskiej<sup id="fnref:12"><a href="#fn:12" class="footnote-ref" role="doc-noteref">12</a></sup>. W projekcie przewidziano również podłączenie budynków do sieci wodociągowej i kanalizacyjnej, więc i stworzenie w środku toalet z oddzielnym wejściem od zewnątrz (prawdopodobnie będą one zlokalizowane w przestrzeni dawnych kas biletowych). Niestety przewidziano również montaż systemu płatnego wejścia (automatu do pobierania opłat) do owych toalet<sup id="fnref:13"><a href="#fn:13" class="footnote-ref" role="doc-noteref">13</a></sup>. Całość wyremontowanych poczekalni ma być dostosowana do potrzeb pasażerów o alternatywnej motoryce, a toalety dostosowane również do potrzeb opiekunów z dziećmi.</p>
+<p><img src="img/3.jpg" alt="Stacja kolejowa Warszawa Miedzeszyn, 01.04.2008r."></p>
+<blockquote>
+<p>Jeśli optymistycznie przyjmiemy zapowiadane przez PKP PLK terminy remontów stacji, na upragnione poczekalnie na linii otwockiej wystarczy poczekać tylko następne kilka lat.</p></blockquote>
+<p>Poczekalnie na linii otwockiej mają wartość nie tylko historyczną, ale i czysto użytkową, jako podstawowe udogodnienie dla podróżnych oczekujących na pociąg. Ostatnie kilka lat podróżni na trasie Otwock – Warszawa Wschodnia muszą obchodzić się bez takich wygód, co szczególnie odczuwalne jest przy niesprzyjającej pogodzie. Jeśli jednak optymistycznie przyjmiemy zapowiadane terminy remontów, na upragnione poczekalnie wystarczy poczekać następne kilka lat.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>A. Skalimowski i Z. Tucholski, <em>Modernistyczne wiaty i przystanki kolejowe Warszawskiego Węzła Kolejowego. O konieczności ochrony konserwatorskiej</em>, „Ochrona Zabytków” 2010, nr 1–4, s. 73–84.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>Ibidem.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>Ibidem.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>Ibidem.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5">
+<p>Ibidem.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6">
+<p>Ibidem.&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7">
+<p>Ibidem.&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:8">
+<p><a href="https://www.bazakolejowa.pl/index.php?dzial=stacje&amp;id=4869&amp;okno=start">Warszawa Radość w bazakolejowa.pl [dostęp 24.01.2026r.]</a>&#160;<a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:9">
+<p><a href="https://fotopolska.eu/Warszawa/b142980,Przystanek_kolejowy_Warszawa_Miedzeszyn.html">Warszawa Miedzeszyn w fotopolska.eu [dostęp 24.01.2026r.]</a>&#160;<a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:10">
+<p>PFU dla zadania Zaprojektowanie i wykonanie robót pomieszczeń poczekalni na przystankach kolejowych w ramach projektu pn.: „Prace na linii kolejowej nr 7 Warszawa Wschodnia Osobowa - Dorohusk na odcinku Warszawa – Otwock – Dębin – Lublin, etap IIb” (Warszawa Wawer-Otwock), załącznik nr 8 – dokumentacja fotograficzna, s. 44–48.&#160;<a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:11">
+<p>PFU dla zadania Zaprojektowanie i wykonanie robót pomieszczeń poczekalni na przystankach kolejowych w ramach projektu pn.: „Prace na linii kolejowej nr 7 Warszawa Wschodnia Osobowa - Dorohusk na odcinku Warszawa – Otwock – Dębin – Lublin, etap IIb” (Warszawa Wawer-Otwock), 2.2 Aktualne uwarunkowania wykonania przedmiotu zamówienia, 2.2.2.1 Pomieszczenia poczekalni, s. 11–14.&#160;<a href="#fnref:11" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:12">
+<p>PFU dla zadania Zaprojektowanie i wykonanie robót pomieszczeń poczekalni na przystankach kolejowych w ramach projektu pn.: „Prace na linii kolejowej nr 7 Warszawa Wschodnia Osobowa - Dorohusk na odcinku Warszawa – Otwock – Dębin – Lublin, etap IIb” (Warszawa Wawer-Otwock), 3. Zakres robót, s. 14–20.&#160;<a href="#fnref:12" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:13">
+<p>Ibidem.&#160;<a href="#fnref:13" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+</div>
+  </article>
+
+    </main>
+
+    <footer>
+
+      <section class="logo">
+      <a href="/">
+        <img src="/magazynulga/ulga_logo.svg" alt="Przekreślone tłuste litery napisu „Ulga”, logotyp magazynu">
+      </a>
+      </section>
+
+      <section class="bottom">
+        <div><a href="https://wbask.asp.waw.pl/" target="_blank">WBASK</a></div>
+        <div>2026</div>
+      </section>
+
+    </footer>
+  </body>
+</html>

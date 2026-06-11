@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projekt muzyczny [audio:spa] / Magazyn „Ulga”</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <style>
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+line-height: 1.6;
+}
+.menu, .bottom {
+display: flex;
+justify-content: space-between;
+padding: 20px;
+background-color: white;
+text-transform: uppercase;
+font-size: 24px;
+}
+.logo {
+text-align: center;
+padding: 40px 0;
+}
+.logo img {
+width: 100%;
+max-width: 800px;
+height: auto;
+}
+.grid {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 20px;
+padding: 20px;
+max-width: 1200px;
+margin: 0 auto;
+}
+.post {
+border: 1px solid #ddd;
+padding: 20px;
+background-color: white;
+}
+.post h4 {
+margin: 0 0 8px;
+font-size: 15spx;
+}
+.post .author {
+margin: 0 0 12px;
+font-weight: 700;
+ 
+}
+
+.flip-container {
+perspective: 1000px;
+margin-bottom: 16px;
+}
+.flip-container:hover .flipper {
+transform: rotateY(180deg);
+}
+.flipper {
+transition: transform 0.6s;
+transform-style: preserve-3d;
+position: relative;
+}
+.front, .back1, .back2, .back3 {
+backface-visibility: hidden;
+}
+.back1 {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+transform: rotateY(180deg);
+background-color: #CDD592;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 10px;
+box-sizing: border-box;
+font-size: 15px;
+color:#1B062B;
+font-family: Playwrite IN;
+}
+
+.back2 {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+transform: rotateY(180deg);
+background-color: #60866A;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 10px;
+box-sizing: border-box;
+font-size: 15px;
+color:#C4D168;
+font-family: Playwrite IN;
+}
+
+.back3 {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+transform: rotateY(180deg);
+background-color: #90C7B7;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 10px;
+box-sizing: border-box;
+font-size: 15px;
+color:#2C647C;
+font-family: Playwrite IN;
+}
+
+.post img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+h4 {
+    font-family: Playwrite IN;
+}
+
+.author {
+    font-family: "Playwrite ID", cursive;
+}
+
+.opis {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 1.4;
+    font-family: Playwrite IN;
+}
+
+.about {
+    text-align: center;
+    font-size: 50px;
+}
+
+      .gridmain {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      }
+
+      @media (max-width: 768px) {
+        .grid,
+        .gridmain {
+          grid-template-columns: 1fr;
+        }
+
+        .opis,
+        article p,
+        article h1,
+        article h2,
+        article h3,
+        .footnotes,
+        blockquote {
+          width: 100%;
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+
+      a, a:visited {
+        text-decoration: none;
+        color: black;
+      }
+      a:hover, a:active {
+        text-decoration: underline;
+      }
+
+            .photo {
+      text-align: center;
+      padding: 20px 0;
+      }
+      .photo img {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      }
+
+      
+ 
+
+article p {
+font-size: 22px;
+width: 40%;
+margin: 0px auto;
+font-size: 17px;
+text-align: justify;
+}
+
+article p img {
+width: 120%;
+height: auto;
+display: relative;
+margin: 20px 0;
+margin-left: -100px;
+}
+
+article h1 {
+    width: 70%;
+    font-size: 42px;
+    margin: 0px auto;
+    font-family: Playwrite IN
+}
+
+article h2 {
+    width: 70%;
+    font-size: 25px;
+    margin: 0px auto;
+    font-family: Playwrite IN
+}
+
+article h3 {
+    width: 60%;
+    margin: 0px auto;
+    font-size: 22px;
+    text-align: justify;
+    font-family: Playwrite IN
+}
+
+.footnotes {
+    width: 55%;
+margin: 0px auto;
+font-size: 15px;
+}
+
+blockquote {
+    width: 140%;
+    font-size: 19px;
+    margin: 0px auto;
+    margin-left: -100px;
+    margin-right: 1000px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: "Playwrite US Modern";
+}
+      
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <section class="menu">
+        
+      <a href="/magazynulga/wstep/">Wstęp</a>
+       
+      <a href="/magazynulga/o-nas/">O nas</a>
+       
+      </section>
+
+      <section class="logo">
+      <a href="/">
+        <img src="/magazynulga/ulga_logo.svg" alt="Przekreślone tłuste litery napisu „Ulga”, logotyp magazynu">
+      </a>
+      </section>
+    </header>
+
+    <main>
+      
+  <article>
+    <h1>Projekt muzyczny [audio:spa]</h1>
+    <h2></h2>
+    <h3>Gabriela Cholewińska</h3>
+    <div><h3 id="w-czasach-ciągłego-przebodźcowania-informacjami-napływająymi-z-każdej-strony-wielu-ludzi-nieważne-w-jakim-wieku-często-fantazjują-o-ucieczce-relaksie-odcięciu-się-od-zgiełku-życia-codziennego-na-przeciw-tej-idei-wychodzi-dwóch-twórców-polskiej-alternatywy---mateostereo-oraz-duble-music---podając-nam-redefinicję-odpoczynku-czyli-słuchowisko-audiospa-zero-rejestracji-zero-pakowania-walizek-zero-urlopów-audiospa-jest-relaksem-na-wyciągnięcie-ręki-i-pary-słuchawek-relaksacyjne-dźwięki-narracyjne-głosy-oraz-muzyczne-motywy-to-wszystko-pozwala-nam-oderwać-się-od-komputera-i-w-środku-miasta-poczuć-się-jak-w-najlepszym-uzdrowisku-w-polsce">W czasach ciągłego przebodźcowania informacjami napływająymi z każdej strony wielu ludzi, nieważne w jakim wieku, często fantazjują o ucieczce, relaksie, odcięciu się od zgiełku życia codziennego. Na przeciw tej idei wychodzi dwóch twórców polskiej alternatywy - mateostereo oraz dub.le music - podając nam redefinicję odpoczynku, czyli słuchowisko [audio:spa]. Zero rejestracji, zero pakowania walizek, zero urlopów, [audio:spa] jest relaksem na wyciągnięcie ręki (i pary słuchawek). Relaksacyjne dźwięki, narracyjne głosy oraz muzyczne motywy, to wszystko pozwala nam oderwać się od komputera i w środku miasta poczuć się jak w najlepszym uzdrowisku w Polsce.</h3>
+<h4 id="spa-w-słuchawkach">SPA w słuchawkach</h4>
+<p>W sanatoryjnych turnusach szukamy przede wszystkim odosobnienia, spokojnej, nieprzytłaczającej rutyny dnia. Marzy nam się chodzenie w szlafrokach, oddychanie świeżym powietrzem, oddanie się naturze i rytmowi dnia, który stał się towarem luksusowym w erze wyścigu szczurów.</p>
+<blockquote>
+<p>Słuchowisko działa tu jak zabieg terapeutyczny. Struktura odcinków przypomina turnus - ma swój rytm, wprowadzenie, kulminację i wyciszenie.</p></blockquote>
+<p>Głos pełni funkcję przewodnika, niemal jak uzdrowiskowy lekarz prowadzący. powtarzalność motywów buduje poczucie bezpieczeństwa, kluczowe dla realnego odprężenia. W efekcie odbiorca doświadcza czegoś więcej niż rozrywki, a mianowicie kontrolowanego spowolnienia.</p>
+<h4 id="motyw-spa-jako-narracyjna-obietnica">Motyw SPA jako narracyjna obietnica</h4>
+<p>SPA przestało mieć znaczenie tylko relaksacyjne, jest ono swoistą estetyką, komunikatem. Miękkie światło, naturalne tekstury, cisza, biel, połączenie z naturą. [audio:spa] wykorzystuje ten motyw jako opowieści o uldze. Dźwięk staje się dla nas zamiennikiem masażu, kąpieli w uzdrowiskowej wodzie. Koi, otula, spowalnia tętno, daje przestrzeń do wyciszenia i relaksu.</p>
+<blockquote>
+<p>Wellness nie znaczy już czegoś luksusowego, nieosiągalnego - chłopaki pokazują, że nie powinniśmy walczyć o relaks, tylko ma on być dla każdego w każdym momencie.</p></blockquote>
+<h4 id="instagram-jako-archiwum-uzdrowiska">Instagram jako archiwum uzdrowiska</h4>
+<p>Nie da się nie wspomnieć o genialnej promocji towarzyszącej projektowi. Wcześniej wspomniana estetyka jest wykorzystana przez twórców również w zdjęciach, filmach oraz visualiserach powstałych, by jeszcze dogłębniej wprowadzić nas w strefę relaksu.</p>
+<blockquote>
+<p>Dodatkowo Instagram [audio:spa] prowadzony jest w niecodzienny sposób - jako profil fikcyjnej instytucji. Media nie służą tylko do mówienia o projekcie, one pozwalają nam poczuć się jego częścią.</p></blockquote>
+<p>Autorzy prowadzą chociażby dokumentację turnusu, powiadamiają o nowych zabiegach i zaleceniach, a nawet prowadzą program Pracownika Miesiąca (zgadnijcie komu zazwyczaj przypada ten tytuł). Działanie to powoduje, że w naszej wyobraźni [audio:spa] staje się realną częścią naszego życia, miejscem bliskim naszemu sercu, do którego możemy uciec w każdej wolnej chwili. Odsłuch jest doświadczeniem, rezerwujemy na niego czas, chcemy poświęcić się zalecanemu relaksowi.</p>
+<h4 id="ulga-jako-produkt-kulturowy">Ulga jako produkt kulturowy</h4>
+<p>Ważnym, i myślę, że najważniejszym, aspektem projektu jest to, że odpowiada na realną potrzebę społeczną. Dziś wyjazd do sanatorium bywa luksusem czasowym i finansowym.Tymczasem słuchowisko jest dostępne natychmiast, nie wymaga logistyki i pozwala na mikrodawki odpoczynku.</p>
+<blockquote>
+<p>Wystarczy 20 minut - a chyba tyle jesteśmy w stanie poświęcić w trakcie dnia na chwilę odpoczynku. Trzeba pamiętać, że projektu najlepiej słucha się, gdy poświęcimy mu 100 % naszej uwagi i skupienia, wtedy turnus przynosi najlepsze efekty.</p></blockquote>
+<h4 id="aspa-nowym-nfz">ASPA nowym NFZ?</h4>
+<p>Oczywiście słuchowisko nie zastąpi nam sanatorium w sensie medycznym, nie poprawi wyników badań ani nie zostanie zrefundowany przez państwo. Ale może spełnić jedną z najważniejszych funkcji uzdrowiska - da psychologiczną zgodę na odpoczynek. Resort to miejsce, w którym spowolnienie trybu życia jest wręcz wskazane, a [audio:spa] tworzy taką przestrzeń w dźwięku. A jeśli współczesne zmęczenie jest przede wszystkim poznawcze i emocjonalne, to właśnie tam potrzebujemy terapii.</p>
+<h4 id="co-dalej">Co dalej?</h4>
+<p>Chociaż w momencie pisania artykułu mamy dostęp do jednego 19-minutowego słuchowiska, to z Instagrama “sanatorium” wiemy, że Pracownicy Miesiąca” nie zwalniają tempa i szykują dla nas kolejne turnusy relaksacyjne wypełnione dźwiękiem, naturą i nutą zabawy (bo w którym sanatorium nie ma czasu na “fajfy&quot;?). Z niecierpliwością i zmęczeniem wyczekujemy kolejnych zaleceń specjalistów od relaksu.</p>
+<h5 id="bibliografia">Bibliografia:</h5>
+<ul>
+<li>Instagram [audio:spa]: <a href="https://www.instagram.com/audio.spa/">https://www.instagram.com/audio.spa/</a></li>
+<li>Spotify [audio:spa]: <a href="https://open.spotify.com/artist/2vANTG9qfbidmW9d11pVhP">https://open.spotify.com/artist/2vANTG9qfbidmW9d11pVhP</a></li>
+</ul>
+</div>
+  </article>
+
+    </main>
+
+    <footer>
+
+      <section class="logo">
+      <a href="/">
+        <img src="/magazynulga/ulga_logo.svg" alt="Przekreślone tłuste litery napisu „Ulga”, logotyp magazynu">
+      </a>
+      </section>
+
+      <section class="bottom">
+        <div><a href="https://wbask.asp.waw.pl/" target="_blank">WBASK</a></div>
+        <div>2026</div>
+      </section>
+
+    </footer>
+  </body>
+</html>

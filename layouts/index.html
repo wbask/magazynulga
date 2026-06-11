@@ -1,0 +1,30 @@
+{{ define "main" }}
+<section class="photo">
+  <img src="poczatek.jpg" alt="Dwie osoby ubrane w białe koszule leżąc na trawie trzymają się za ręce, a ich twarze są niewidoczne.">
+</section>
+
+<section class="gridmain">
+  {{ range where .Site.RegularPages "Type" "artykul" }}
+  <a href="{{ .RelPermalink }}">
+    <div class="post">
+      {{ $page := . }}
+      {{ with $page.Param "cover" }}
+        {{ with $page.Resources.GetMatch . }}
+          {{ $resized := .Resize "800x" }}
+          <img src="{{ $resized.RelPermalink }}" alt="{{ $page.Title }}" loading="lazy">
+        {{ else }}
+          <img src="{{ $page.Params.cover }}" alt="{{ $page.Title }}" loading="lazy">
+        {{ end }}
+      {{ end }}
+      <p class="author">{{ $page.Params.author }}</p>
+      <h4>{{ $page.Title }}</h4>
+    </div>
+  </a>
+  {{ end }}
+</section>
+
+
+<section class="photo">
+  <img src="koniec.jpg" alt="Dwie osoby ubrane w białe koszule leżą na trawie przytulając się.">
+</section>
+{{ end }}

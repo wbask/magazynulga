@@ -1,0 +1,153 @@
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+line-height: 1.6;
+}
+.menu {
+display: flex;
+justify-content: space-between;
+padding: 20px;
+background-color: white;
+}
+.logo {
+text-align: center;
+padding: 40px 0;
+}
+.logo img {
+width: 100%;
+max-width: 800px;
+height: auto;
+}
+.grid {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 20px;
+padding: 20px;
+max-width: 1200px;
+margin: 0 auto;
+}
+.post {
+border: 1px solid #ddd;
+padding: 20px;
+background-color: white;
+}
+.post h4 {
+margin: 0 0 8px;
+font-size: 15spx;
+}
+.post .author {
+margin: 0 0 12px;
+font-weight: 700;
+}
+.bottom {
+display: flex;
+justify-content: space-between;
+padding: 20px;
+background-color: #f4f4f4;
+font-size: 24px;
+font-weight: bold;
+}
+.flip-container {
+perspective: 1000px;
+margin-bottom: 16px;
+}
+.flip-container:hover .flipper {
+transform: rotateY(180deg);
+}
+.flipper {
+transition: transform 0.6s;
+transform-style: preserve-3d;
+position: relative;
+}
+.front, .back1, .back2, .back3 {
+backface-visibility: hidden;
+}
+.back1 {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+transform: rotateY(180deg);
+background-color: #CDD592;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 10px;
+box-sizing: border-box;
+font-size: 15px;
+color:#1B062B;
+font-family: Playwrite IN;
+}
+
+.back2 {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+transform: rotateY(180deg);
+background-color: #60866A;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 10px;
+box-sizing: border-box;
+font-size: 15px;
+color:#C4D168;
+font-family: Playwrite IN;
+}
+
+.back3 {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+transform: rotateY(180deg);
+background-color: #90C7B7;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 10px;
+box-sizing: border-box;
+font-size: 15px;
+color:#2C647C;
+font-family: Playwrite IN;
+}
+
+.post img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+h4 {
+    font-family: Playwrite IN;
+}
+
+.author {
+    font-family: Playwrite ID;
+}
+
+.opis {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.about {
+    text-align: center;
+    font-size: 50px;
+}
+
+.playwrite-id-<uniquifier> {
+  font-family: "Playwrite ID", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}

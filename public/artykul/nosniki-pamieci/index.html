@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nośniki pamięci / Magazyn „Ulga”</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <style>
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+line-height: 1.6;
+}
+.menu, .bottom {
+display: flex;
+justify-content: space-between;
+padding: 20px;
+background-color: white;
+text-transform: uppercase;
+font-size: 24px;
+}
+.logo {
+text-align: center;
+padding: 40px 0;
+}
+.logo img {
+width: 100%;
+max-width: 800px;
+height: auto;
+}
+.grid {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 20px;
+padding: 20px;
+max-width: 1200px;
+margin: 0 auto;
+}
+.post {
+border: 1px solid #ddd;
+padding: 20px;
+background-color: white;
+}
+.post h4 {
+margin: 0 0 8px;
+font-size: 15spx;
+}
+.post .author {
+margin: 0 0 12px;
+font-weight: 700;
+ 
+}
+
+.flip-container {
+perspective: 1000px;
+margin-bottom: 16px;
+}
+.flip-container:hover .flipper {
+transform: rotateY(180deg);
+}
+.flipper {
+transition: transform 0.6s;
+transform-style: preserve-3d;
+position: relative;
+}
+.front, .back1, .back2, .back3 {
+backface-visibility: hidden;
+}
+.back1 {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+transform: rotateY(180deg);
+background-color: #CDD592;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 10px;
+box-sizing: border-box;
+font-size: 15px;
+color:#1B062B;
+font-family: Playwrite IN;
+}
+
+.back2 {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+transform: rotateY(180deg);
+background-color: #60866A;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 10px;
+box-sizing: border-box;
+font-size: 15px;
+color:#C4D168;
+font-family: Playwrite IN;
+}
+
+.back3 {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+transform: rotateY(180deg);
+background-color: #90C7B7;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 10px;
+box-sizing: border-box;
+font-size: 15px;
+color:#2C647C;
+font-family: Playwrite IN;
+}
+
+.post img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+h4 {
+    font-family: Playwrite IN;
+}
+
+.author {
+    font-family: "Playwrite ID", cursive;
+}
+
+.opis {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 1.4;
+    font-family: Playwrite IN;
+}
+
+.about {
+    text-align: center;
+    font-size: 50px;
+}
+
+      .gridmain {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      }
+
+      @media (max-width: 768px) {
+        .grid,
+        .gridmain {
+          grid-template-columns: 1fr;
+        }
+
+        .opis,
+        article p,
+        article h1,
+        article h2,
+        article h3,
+        .footnotes,
+        blockquote {
+          width: 100%;
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+
+      a, a:visited {
+        text-decoration: none;
+        color: black;
+      }
+      a:hover, a:active {
+        text-decoration: underline;
+      }
+
+            .photo {
+      text-align: center;
+      padding: 20px 0;
+      }
+      .photo img {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      }
+
+      
+ 
+
+article p {
+font-size: 22px;
+width: 40%;
+margin: 0px auto;
+font-size: 17px;
+text-align: justify;
+}
+
+article p img {
+width: 120%;
+height: auto;
+display: relative;
+margin: 20px 0;
+margin-left: -100px;
+}
+
+article h1 {
+    width: 70%;
+    font-size: 42px;
+    margin: 0px auto;
+    font-family: Playwrite IN
+}
+
+article h2 {
+    width: 70%;
+    font-size: 25px;
+    margin: 0px auto;
+    font-family: Playwrite IN
+}
+
+article h3 {
+    width: 60%;
+    margin: 0px auto;
+    font-size: 22px;
+    text-align: justify;
+    font-family: Playwrite IN
+}
+
+.footnotes {
+    width: 55%;
+margin: 0px auto;
+font-size: 15px;
+}
+
+blockquote {
+    width: 140%;
+    font-size: 19px;
+    margin: 0px auto;
+    margin-left: -100px;
+    margin-right: 1000px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: "Playwrite US Modern";
+}
+      
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <section class="menu">
+        
+      <a href="/magazynulga/wstep/">Wstęp</a>
+       
+      <a href="/magazynulga/o-nas/">O nas</a>
+       
+      </section>
+
+      <section class="logo">
+      <a href="/">
+        <img src="/magazynulga/ulga_logo.svg" alt="Przekreślone tłuste litery napisu „Ulga”, logotyp magazynu">
+      </a>
+      </section>
+    </header>
+
+    <main>
+      
+  <article>
+    <h1>Nośniki pamięci</h1>
+    <h2>O przedmiotach, które decydujemy się zatrzymać</h2>
+    <h3>Marta Milewska</h3>
+    <div><h3 id="wyrzucanie-rzeczy-towarzyszy-nam-niemal-codziennie-robimy-to-odruchowo-bez-większego-namysłu-stało-się-to-czynnością-bez-której-nie-kończymy-dnia--żyjemy-w-stałym-nadmiarze-więc-niemożliwe-jest-zachowanie-wszystkiego-w-kapitalizmie-kupowanie-jest-nieuniknione-a-nowe-rzeczy-pojawiają-się-szybciej-niż-jesteśmy-w-stanie-się-oswoić-czy-zintegrować-z-codziennością-aby-nie-wpaść-w-czarną-dziurę-zbieractwa-aby-nie-zamieniać-własnej-przestrzeni-w-graciarnię--regularnie-selekcjonujemy-i-pozbywamy-się-przedmiotów">Wyrzucanie rzeczy towarzyszy nam niemal codziennie. Robimy to odruchowo, bez większego namysłu, stało się to czynnością, bez której nie kończymy dnia.  Żyjemy w stałym nadmiarze, więc niemożliwe jest zachowanie wszystkiego. W kapitalizmie kupowanie jest nieuniknione, a nowe rzeczy pojawiają się szybciej, niż jesteśmy w stanie się oswoić czy zintegrować z codziennością. Aby nie wpaść w czarną dziurę zbieractwa, aby nie zamieniać własnej przestrzeni w graciarnię – regularnie selekcjonujemy i pozbywamy się przedmiotów.</h3>
+<p>Powody wyrzucania mogą być różne. Czasem zwyczajnie nie mamy na coś  wystarczająco miejsca — ze względu na przeprowadzki, metraż, terminowość. Czasem jesteśmy zbyt obciążeni emocjonalnie, żeby dłużej patrzeć na niektóre rzeczy i trzymać w naszej przestrzeni.</p>
+<blockquote>
+<p>Porządkowanie staję się wtedy mechanizmem obronnym, próbą zachowania kontroli nad przestrzenią i nad sobą.</p></blockquote>
+<p>Segregacja pozwala złapać oddech, poczuć chwilową
+kontrolę. Są momenty, w których wyrzucanie przestaje być neutralne. Wyprowadzki, święta, rozstania, śmierć — chwile, w których coś się kończy lub zaczyna. Wtedy rzeczy zaczynają ważyć więcej. To właśnie w takim momencie, pewnego popołudnia, porządkowałam stare papiery razem z moją mamą. Chciałyśmy pozbyć się dokumentów, rachunków, notatek. Skorzystać z niszczarki, zamknąć sprawę, nie wracać do niej przy kolejnym sprzątaniu.</p>
+<p>Wśród papierów znalazłam list z 1997 roku. Przyjaciółka mojej mamy opisywała w nim rozpad swojego małżeństwa. Pisała o mężczyźnie, który z dnia na dzień przestał być partnerem i ojcem, a stał się kimś obcym. O jego odejściu bez słowa. O dzieciach. O pustce, której nie dało się zrozumieć ani wytłumaczyć. Czytając ten list, czułam ciężar emocji, które nie były moje, a jednak były niezwykle wyraźne. Jakby czas się nie wydarzył.</p>
+<p>Zaczęłam się zastanawiać, dlaczego ten list był przechowywany tak długo. Dlaczego leżał wśród innych papierów przez niemal trzy dekady. I dlaczego dopiero teraz pojawiła się gotowość, by się go pozbyć. Jeszcze bardziej zaskoczyło mnie to, że ja — osoba, która nigdy nie poznała autorki —nie potrafiłam się na to zgodzić. Nie znałam jej historii poza tym jednym listem, a mimo to czułam, że jego zniszczenie byłoby jak zamknięcie czyjegoś doświadczenia bez pożegnania, bez zgody.</p>
+<p><img src="img2/1-List,1997.png" alt="list strona pierwsza"></p>
+<blockquote>
+<p>Nawet na pierwszy rzut oka niepotrzebny, anonimowy dla nas list może stać się nośnikiem emocji. Nie wspomnieniem, nie pamiątką, lecz czymś pomiędzy. Dowodem, że czyjś ból istniał naprawdę, nazwany i zapisany. Przetrwał, nawet jeśli nikt do niego nie wracał.</p></blockquote>
+<p>To wydarzenie skłoniło mnie do refleksji nad tym, jak i dlaczego zachowujemy rzeczy. Kiedy przychodzi moment decyzji o pozbyciu się przedmiotu, który przez dekady zalegał wśród rachunków, rysunków i dokumentów? Co sprawia, że niektóre rzeczy są odkładane „na później”? I czy rzeczywiście wyrzucamy je wtedy, gdy przestają mieć dla nas znaczenie? Czy raczej wtedy, gdy jesteśmy gotowi zmierzyć się z emocjami, które ze sobą niosą?</p>
+<p>Nie wszyscy potrafią wyrzucać. Dla niektórych nadmiar rzeczy staje się formą ochrony. Każdy przedmiot wydaje się potencjalnym schronieniem dla emocji, których nie da się przeżyć bezpośrednio. To, co z zewnątrz wygląda jak chaos, od środka bywa próbą zachowania ciągłości. Różne kultury próbowały oswoić ten moment rozstawania się z rzeczami na różne sposoby. Jedne uczą powolnego porządkowania, inne dystansu wobec przedmiotów. Ale żadna z tych praktyk nie polega na czystej pustce. Zawsze chodzi o ulgę — o to, żeby ciężar był do uniesienia.</p>
+<p>Najbliżej opisania tego doświadczenia selekcjonowania starych papierów było mi szwedzkie pojęcie döstädning — sprzątania, które często tłumaczy się jako „porządkowanie przed śmiercią”. W rzeczywistości jest to proces ciągły, niezwiązany bezpośrednio z końcem życia. Jego celem jest stopniowe pozbywanie się rzeczy, które przestają być potrzebne — nie po to, by wymazać przeszłość, ale by uporządkować własną historię i nie obciążać nią innych.
+W tym podejściu porządkowanie staje się formą troski. Ulga nie pojawia się dlatego, że przestrzeń staje się pusta, lecz dlatego, że staje się świadoma. Mieszkanie nie kryje w sobie nieprzepracowanych śladów przeszłości ukrytych w szufladach i między papierami.</p>
+<p>Istnieją jednak także postawy skrajnie odmienne. Dla jednych wyrzucanie jest strategią przetrwania, szybkim odcięciem się od tego, co bolesne. Dla innych niemal niemożliwe jest pozbycie się czegokolwiek. Hoarding — patologiczne gromadzenie — nie jest nadmiarem rzeczy samym w sobie, lecz nadmiarem emocji, których nie da się przepracować ani nazwać. W tym sensie nie jest przeciwieństwem porządku, lecz jego niemożliwą wersją, czyli stanem, w którym ulga nie może się pojawić, bo każda próba selekcji oznaczałaby konfrontację z utratą. Ludzie gromadzą niepotrzebne rzeczy nie dlatego, że są nieuporządkowane, lecz dlatego, że każda rzecz wydaje się potencjalnym nośnikiem znaczenia. To, co z zewnątrz wygląda jak chaos, od środka bywa próbą zachowania ciągłości i bezpieczeństwa.</p>
+<p>Wróciłam myślami do listu. Do pytania, dlaczego był przechowywany tak długo i dlaczego teraz można było się z nim rozstać. Większość rzeczy nie jest zaprojektowana po to, by trwać wiecznie. Może są po to, by zostać z nami dokładnie tak długo, jak długo są potrzebne. Nawet jeśli wyrzucamy rzeczy, coś zostaje. W pamięci. W ciele. W sposobie, w jaki reagujemy na cudze historie. Ulga nie polega na zapomnieniu. Polega na zgodzie na to, że nie wszystko musi mieć materialną formę, żeby było prawdziwe.</p>
+<p><img src="img2/2-%20List,1997.jpeg" alt="list strona druga"></p>
+</div>
+  </article>
+
+    </main>
+
+    <footer>
+
+      <section class="logo">
+      <a href="/">
+        <img src="/magazynulga/ulga_logo.svg" alt="Przekreślone tłuste litery napisu „Ulga”, logotyp magazynu">
+      </a>
+      </section>
+
+      <section class="bottom">
+        <div><a href="https://wbask.asp.waw.pl/" target="_blank">WBASK</a></div>
+        <div>2026</div>
+      </section>
+
+    </footer>
+  </body>
+</html>

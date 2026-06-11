@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odbicie w uldze / Magazyn „Ulga”</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <style>
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+line-height: 1.6;
+}
+.menu, .bottom {
+display: flex;
+justify-content: space-between;
+padding: 20px;
+background-color: white;
+text-transform: uppercase;
+font-size: 24px;
+}
+.logo {
+text-align: center;
+padding: 40px 0;
+}
+.logo img {
+width: 100%;
+max-width: 800px;
+height: auto;
+}
+.grid {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 20px;
+padding: 20px;
+max-width: 1200px;
+margin: 0 auto;
+}
+.post {
+border: 1px solid #ddd;
+padding: 20px;
+background-color: white;
+}
+.post h4 {
+margin: 0 0 8px;
+font-size: 15spx;
+}
+.post .author {
+margin: 0 0 12px;
+font-weight: 700;
+ 
+}
+
+.flip-container {
+perspective: 1000px;
+margin-bottom: 16px;
+}
+.flip-container:hover .flipper {
+transform: rotateY(180deg);
+}
+.flipper {
+transition: transform 0.6s;
+transform-style: preserve-3d;
+position: relative;
+}
+.front, .back1, .back2, .back3 {
+backface-visibility: hidden;
+}
+.back1 {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+transform: rotateY(180deg);
+background-color: #CDD592;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 10px;
+box-sizing: border-box;
+font-size: 15px;
+color:#1B062B;
+font-family: Playwrite IN;
+}
+
+.back2 {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+transform: rotateY(180deg);
+background-color: #60866A;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 10px;
+box-sizing: border-box;
+font-size: 15px;
+color:#C4D168;
+font-family: Playwrite IN;
+}
+
+.back3 {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+transform: rotateY(180deg);
+background-color: #90C7B7;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 10px;
+box-sizing: border-box;
+font-size: 15px;
+color:#2C647C;
+font-family: Playwrite IN;
+}
+
+.post img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+h4 {
+    font-family: Playwrite IN;
+}
+
+.author {
+    font-family: "Playwrite ID", cursive;
+}
+
+.opis {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 1.4;
+    font-family: Playwrite IN;
+}
+
+.about {
+    text-align: center;
+    font-size: 50px;
+}
+
+      .gridmain {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      }
+
+      @media (max-width: 768px) {
+        .grid,
+        .gridmain {
+          grid-template-columns: 1fr;
+        }
+
+        .opis,
+        article p,
+        article h1,
+        article h2,
+        article h3,
+        .footnotes,
+        blockquote {
+          width: 100%;
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+
+      a, a:visited {
+        text-decoration: none;
+        color: black;
+      }
+      a:hover, a:active {
+        text-decoration: underline;
+      }
+
+            .photo {
+      text-align: center;
+      padding: 20px 0;
+      }
+      .photo img {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      }
+
+      
+ 
+
+article p {
+font-size: 22px;
+width: 40%;
+margin: 0px auto;
+font-size: 17px;
+text-align: justify;
+}
+
+article p img {
+width: 120%;
+height: auto;
+display: relative;
+margin: 20px 0;
+margin-left: -100px;
+}
+
+article h1 {
+    width: 70%;
+    font-size: 42px;
+    margin: 0px auto;
+    font-family: Playwrite IN
+}
+
+article h2 {
+    width: 70%;
+    font-size: 25px;
+    margin: 0px auto;
+    font-family: Playwrite IN
+}
+
+article h3 {
+    width: 60%;
+    margin: 0px auto;
+    font-size: 22px;
+    text-align: justify;
+    font-family: Playwrite IN
+}
+
+.footnotes {
+    width: 55%;
+margin: 0px auto;
+font-size: 15px;
+}
+
+blockquote {
+    width: 140%;
+    font-size: 19px;
+    margin: 0px auto;
+    margin-left: -100px;
+    margin-right: 1000px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: "Playwrite US Modern";
+}
+      
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <section class="menu">
+        
+      <a href="/magazynulga/wstep/">Wstęp</a>
+       
+      <a href="/magazynulga/o-nas/">O nas</a>
+       
+      </section>
+
+      <section class="logo">
+      <a href="/">
+        <img src="/magazynulga/ulga_logo.svg" alt="Przekreślone tłuste litery napisu „Ulga”, logotyp magazynu">
+      </a>
+      </section>
+    </header>
+
+    <main>
+      
+  <article>
+    <h1>Odbicie w uldze</h1>
+    <h2>Analiza instalacji _Fractured Reflections_ autorstwa Anny Klimczak i Sefy Sagira</h2>
+    <h3>Ewa Mirończuk</h3>
+    <div><h3 id="człowiek-często-zapomina-że-nie-jest-niezależnym-niezniszczalnym-bytem-i-traktuje-przyrodę-jako-gorszą-od-siebie-podległą-i-zdatną-głównie-do-wykorzystywania-bez-konsekwencji-instalacja-fractured-reflections-autorstwa-sefy-sagira-i-anny-klimczak-zaprzecza-temu-sposobowi-myślenia-i-zakłada-równość-tych-dwóch-światów-odzwierciedlając-punkt-widzenia-natury-i-stawiając-go-na-równi-z-perspektywą-człowieka">Człowiek często zapomina, że nie jest niezależnym, niezniszczalnym bytem i traktuje przyrodę jako gorszą od siebie, podległą i zdatną głównie do wykorzystywania bez konsekwencji. Instalacja Fractured Reflections autorstwa Sefy Sagira i Anny Klimczak zaprzecza temu sposobowi myślenia i zakłada równość tych dwóch światów, odzwierciedlając punkt widzenia natury i stawiając go na równi z perspektywą człowieka.</h3>
+<p><img src="img/cover.jpg" alt="widok z bliska instalacji &ldquo;Fracutred Reflecions&rdquo;"></p>
+<p><em>Fractured Reflections</em> autorstwa Sefy Sagira i Anny Klimczak to instalacja dźwiękowa pokazywana na wystawie Po deszczu, której kuratorkami były Jaga Hupało i Anna Klimczak. Projekt realizowany w ramach Pasma Sztuki organizowanego przez Ostoje Sztuki. Odbył się on podczas Festiwalu Góry Literatury 2025 – wydarzenia kulturalnego mającego miejsce w Nowej Rudzie i okolicach. Jest to inicjatywa Olgi Tokarczuk, organizowana przez jej fundację. Pisarze, czytelnicy i miłośnicy kultury spotykają się, aby wziąć udział w m.in. rozmowach o książkach, koncertach, pokazach filmowych oraz wykładach i dyskusjach łączących literaturę z filozofią i sztuką.</p>
+<p><img src="img/IMG_3688.JPG" alt="widok na Zamek Sarny w Ściniawce Górnej"></p>
+<p>Wystawa trwała od 4 do 12 lipca 2025 roku, znajdowała się w Zamku Sarny w Ścinawce Górnej. Jest to renesansowe założenie architektoniczne będące w trakcie prac remontowo-konserwatorskich, co sprawia, że budynki na granicy ruiny sąsiadują z częściami już odbudowanymi. Okolica jest bardzo spokojna, pełna zalesionych gór i niesamowitej przestrzeni. Atmosfera powstała dzięki zderzeniu pozostałości po innej epoce oraz natury – stawia nas w nie-miejscu między pamięcią a zapomnieniem. W kontekście tematyki wystawy, jaką jest w pewnym stopniu ekologia – wprowadza to odbiorcę w dość refleksyjny nastrój.</p>
+<p>Na wystawie <em>Po deszczu</em> tworzona jest narracja opierająca się na dualizmie tytułowego pojęcia. Z jednej strony przywołuje wizję urodzaju i ulgi występujących w naturze oraz w doświadczeniu człowieka. Z drugiej strony przypomina o sytuacjach kryzysowych, na które również trzeba zwrócić uwagę – mniejszych, powódź, lub większych, jak katastrofa klimatyczna. To stan, który jest pełen napięcia, ale po jakimś czasie się uspokaja, a nawet staje się przyczyną pozytywnych skutków. Kontekstem tytułu wystawy może być też sam zapach pojawiający się po deszczu – petrichor. Można to uznać za nawiązanie do węchu, a przez to – doświadczania przez zmysły. Ukazywane dzieła są wykonywane w różnorodnych technikach artystycznych i technologicznych, takich jak: tkaniny, wizualizacje vr, rzeźby, malarstwo oraz instalacje.</p>
+<p><img src="img/image%20(1).png" alt="instalacja &ldquo;Fractured Reflections&rdquo;">
+Podpis ilustracji: zrzut ekranu z filmu, Marcin Nalepa, „PJ NOW: PJATK na Festiwalu Góry Literatury”, PJATK, 2025, <a href="https://pja.edu.pl/relacja-z-festiwalu-gory-literatury-2025/">https://pja.edu.pl/relacja-z-festiwalu-gory-literatury-2025/</a> [dostęp: 20.01.2026]</p>
+<blockquote>
+<p><em>Fractured Reflections</em> znajduje się na piętrze w głównym budynku, jest jednym z pierwszych dzieł, które odbiorca widzi po wejściu na wystawę. Sam tytuł sugeruje wielopoziomowość instalacji. <em>Fractured</em> – <em>rozbite</em> – nawiązuje do sposobu przekształcenia częstotliwości. <em>Reflections</em> – tłumaczone jako <em>odbicia</em> –  powrót do wizualności, ale również <em>refleksje</em>.</p></blockquote>
+<p>Na dzieło składa się talerz satelitarny usytuowany w centralnej części pomieszczenia. Obiekt i otoczenie tworzą kontrast – stal zestawiona ze starymi ścianami zamku. Z talerza wydobywa się dźwięk – spokojny, pulsujący, przypominający przepływający prąd. Nie jest nieprzyjemny, sprawia raczej wrażenie hipnotyzującego. Raz na jakiś czas następuje zmiana rytmu, a wraz z nim – ruchu tafli wody. W jednym momencie jest ona spokojna, a chwilę później ukazują się na niej pulsujące kręgi, które, odbijając się o krawędź, rozprzestrzeniają się po jej całości. Pojawiają się przecinające je fale, przypominające sinusoidę. Patrząc od góry sprawiają wrażenie siatki, raz w luźniejszym, raz w ciaśniejszym splocie. Formują się kręgi – mniejsze lub większe. Powierzchnia utrzymywana jest w nieprzerwanym ruchu, a cały proces polega na ciągłym przenikaniu jednej formy w drugą. Dzieje się to w bardzo subtelny i ledwo zauważalny sposób, do momentu uformowania się następnego ułożenia.</p>
+<p>Jak opowiada artysta Sefa Sagir, dzieło <em>koncentruje się na częstotliwościach w naturze, których człowiek nie słyszy. Bazuje na talerzu satelitarnym i głośnikach kontaktowych, aby zwizualizować różnorodne częstotliwości, tworząc fraktale na wodzie. Jest to próba komunikacji między naturą, a człowiekiem. Przedstawia informacje przekazywane przez naturę niewidoczne dla człowieka sprawiając, że są dla niego widoczne</em><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. Proces przejścia częstotliwości w odbicie na tafli funkcjonuje poprzez <em>odbiór, odbicie i przekształcenie</em><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>, które jest podkreślane odpowiednim oświetleniem, co świadczy o wadze tego komunikatu. Woda traktowana jest jako medium tworzące wizualność nieznanego nam przekazu. Przedstawienie wizualizacji komunikatu natury przypomina o współistnieniu z nią. Człowiek często zapomina, że nie jest niezależnym, niezniszczalnym bytem i traktuje przyrodę jako gorszą od siebie – podległą i zdatną głównie do wykorzystywania, bez konsekwencji. Instalacja zaprzecza temu sposobowi myślenia i zakłada równość tych dwóch światów, odzwierciedlając punkt widzenia natury i stawiając go na równi z perspektywą człowieka. Próba przetłumaczenia i zrozumienia tego komunikatu, nawet w symboliczny sposób, sugeruje powinność większej empatii i uważności na to, co natura nam próbuje przekazać.</p>
+<p>Tafle wody można interpretować jako odbicie naszego społeczeństwa. Dzieło tworzy soczewkę, w której schematy funkcjonowania człowieka są porównywalne do tych pojawiających się w naturze. Ruch fal odbijających się od siebie i przenikających wzajemnie może funkcjonować jako metafora oddziaływania jednego człowieka na drugiego. Nasze decyzje, działania i relacje wpływają na siebie nawzajem i wchodzą ze sobą w interakcje, tworząc pewną siatkę wspólnoty, ogółu. Niezależne zdarzenia i decyzje, osobiste i globalne, przenikają się, tworząc skomplikowaną, nieprzewidywalną i nieprzerwaną całość.</p>
+<p>Tekst opisujący instalację przedstawia wizję <em>wspólnego aktu głębokiego słuchania i ucieleśnionej refleksji w tym co wyłania się po deszczu</em><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. Dzieło oddziaływuje na wiele zmysłów, przez co w odbiorze jest bardzo angażujące: pozwala na zatrzymanie się w doświadczeniu, jakie tworzy. Ogólna atmosfera i otoczenie ułatwia odbiorcy <em>grounding</em>, połączenie się z naturą i doświadczenie zastanej sytuacji we własnym ciele. Są to warunki, które sprawiają, że system nerwowy się uspokaja i odbiorca czuje się lepiej. Zaangażowanie zmysłów, otoczenie natury, odsunięcie się od miasta i szybkiego tempa codzienności – pozwalają wziąć oddech i poczuć ulgę.</p>
+<p>Dzieło <em>Fractured Reflections</em> ściśle koresponduje ze swoim otoczeniem i wystawą oraz funkcjonuje na wielu poziomach. Sama forma, czyli talerz satelitarny, sugeruje odbiór jakiegoś sygnału, a woda znajdująca się w środku reprezentuje jego źródło, jakim jest szeroko pojęta natura. Wizualizacja częstotliwości na tafli jest sposobem podkreślenia przekazu, który bez tego zabiegu pozostałby niezauważony. Instalacja jest dość angażująca, szczególnie jeśli chodzi o nasze zmysły, co z jednej strony sprawia, że wprowadza odbiorcę w intensywny stan obserwacji, ale również i refleksji. Dzieło stanowi metaforę holistycznej wizji ludzkości i natury. Ukazanie jej z perspektywy bliższej fizyce, czyli fal, częstotliwości oraz sił, które nas otaczają i na nas wpływają, sprawia, że zależność między jednym a drugim jest jeszcze wyraźniejsza.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>PJ NOW: PJATK na Festiwalu Góry Literatury, <a href="https://pja.edu.pl/relacja-z-festiwalu-gory-literatury-2025/">https://pja.edu.pl/relacja-z-festiwalu-gory-literatury-2025/</a> [dostęp: 20.01.2026].&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>Opis dzieła Fractured Reflections z wystawy Po deszczu, tamże.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>Opis dzieła „Fractured Reflections” z wystawy „Po deszczu”, tamże.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+</div>
+  </article>
+
+    </main>
+
+    <footer>
+
+      <section class="logo">
+      <a href="/">
+        <img src="/magazynulga/ulga_logo.svg" alt="Przekreślone tłuste litery napisu „Ulga”, logotyp magazynu">
+      </a>
+      </section>
+
+      <section class="bottom">
+        <div><a href="https://wbask.asp.waw.pl/" target="_blank">WBASK</a></div>
+        <div>2026</div>
+      </section>
+
+    </footer>
+  </body>
+</html>
