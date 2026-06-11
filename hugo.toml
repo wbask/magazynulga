@@ -1,4 +1,4 @@
-baseURL = 'https://wbask.github.io/magazynulga/'
+baseURL = 'localhost'
 languageCode = 'pl'
 title = 'Magazyn „Ulga”'
 

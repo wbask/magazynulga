@@ -1,8 +1,35 @@
 {{ define "main" }}
-  <article>
-    <h1>{{ .Title }}</h1>
-    <h2>{{ .Params.subtitle }}</h2>
-    <h3>{{ .Params.author }}</h3>
-    <div>{{ .Content }}</div>
-  </article>
+
+  {{ if .Title }}
+  <section class="title">{{ .Title }}</section>
+  {{ end }}
+
+  {{ with .Params.subtitle }}
+  <section class="title2"><i>{{ . }}</i></section>
+  {{ end }}
+
+  {{ with .Params.lead }}
+  <section class="lead">{{ . | safeHTML }}</section>
+  {{ end }}
+
+  <section class="article">
+    {{ .Content }}
+  </section>
+
+  {{/* cover image: prefer page resource, otherwise param */}}
+  {{ $cover := .Resources.GetMatch "cover*" }}
+  {{ if $cover }}
+    <section class="photo img">
+      <img src="{{ $cover.RelPermalink }}" alt="">
+    </section>
+  {{ else if .Params.cover }}
+    <section class="photo img">
+      <img src="{{ .Params.cover | relURL }}" alt="">
+    </section>
+  {{ end }}
+
+  {{ with .Params.przypisy }}
+  <section class="przypisy">{{ . | safeHTML }}</section>
+  {{ end }}
+
 {{ end }}
