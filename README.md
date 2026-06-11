@@ -14,3 +14,4 @@ hugo server --buildDrafts
 - Add pages under `content/`
 - Customize templates under `layouts/`
 - Optionally add a theme under `themes/` and set `theme = "<your-theme>"` in `hugo.toml`
+# magazynulga
