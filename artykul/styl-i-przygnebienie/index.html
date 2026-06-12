@@ -161,6 +161,9 @@ h4 {
       margin: 0 auto;
       }
 
+
+      
+
       @media (max-width: 768px) {
         .grid,
         .gridmain {
@@ -178,7 +181,110 @@ h4 {
           margin-left: 0;
           margin-right: 0;
         }
-      }
+
+  .article-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  .title {
+    width: 100%;
+    font-size: 1.8rem;
+    margin: 0.75rem auto;
+    text-align: center;
+    line-height: 1.15;
+  }
+
+  .title2,
+  .author_title {
+    width: 100%;
+    margin: 0.5rem auto;
+    font-size: 0.95rem;
+    text-align: center;
+    color: #666;
+  }
+
+  .artykul {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .artykul p {
+    margin: 0 0 1rem;
+  }
+
+  .artykul img,
+  .artykul figure img,
+  .artykul iframe,
+  .artykul embed,
+  .artykul video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .menu,
+  .bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 16px;
+  }
+
+  .grid,
+  .gridmain {
+    grid-template-columns: 1fr;
+  }
+
+  .flip-container,
+  .flipper,
+  .front,
+  .back1,
+  .back2,
+  .back3 {
+    width: 100% !important;
+    min-height: auto !important;
+  }
+
+  .flip-container {
+    max-width: 100% !important;
+  }
+
+  .flipper {
+    min-height: 260px !important;
+  }
+
+  .front img,
+  .back1,
+  .back2,
+  .back3 {
+    width: 100% !important;
+    min-height: 260px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 16px !important;
+  }
+
+  .back1,
+  .back2,
+  .back3 {
+    text-align: left !important;
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+  }
+
+  .back1,
+  .back2,
+  .back3 {
+    padding: 20px !important;
+  }
+}
 
       a, a:visited {
         text-decoration: none;
@@ -198,26 +304,52 @@ h4 {
       height: auto;
       }
 
+
+.title {
+    width: 80%;
+    font-size: 42px;
+    margin: 0px auto;
+    font-family: Playwrite IN;
+}
+
+.title2 {
+    width: 80%;
+    font-size: 25px;
+    margin: 0px auto;
+    font-family: Playwrite IN
+}
+
+.author_title {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.artykul h3 {
+    width: 120%;
+    margin: 0px auto;
+    margin-left: -10%;
+    font-size: 22px;
+    text-align: justify;
+    font-family: Playwrite IN
+}
       
-article {
-width: 70%;
+.artykul {
+width: 40%;
 margin: 0px auto;
 }
 
 article p {
 font-size: 22px;
- 
-margin: 0px auto;
 font-size: 17px;
 text-align: justify;
 }
 
 article p img {
-width: 120%;
+width: 160%;
 height: auto;
 display: relative;
 margin: 20px 0;
-margin-left: -100px;
+margin-left: -30%;
 }
 
 article h1 {
@@ -234,18 +366,12 @@ article h2 {
     font-family: Playwrite IN
 }
 
-article h3 {
-    width: 60%;
-    margin: 0px auto;
-    font-size: 22px;
-    text-align: justify;
-    font-family: Playwrite IN
-}
-
 .footnotes {
-    width: 55%;
-margin: 0px auto;
+    width: 160%;
+    margin: 0px auto;
+    margin-left: -30%;
 font-size: 15px;
+text-align: left;
 }
 
 blockquote {
@@ -258,7 +384,136 @@ blockquote {
     margin-bottom: 25px;
     font-family: "Playwrite US Modern";
 }
-      
+
+      @media (max-width: 768px) {
+        .grid,
+        .gridmain {
+          grid-template-columns: 1fr;
+        }
+
+        .opis,
+        article p,
+        article h1,
+        article h2,
+        article h3,
+        .footnotes,
+        blockquote {
+          width: 100%;
+          margin-left: 0;
+          margin-right: 0;
+        }
+
+        .article-container {
+          width: 100%;
+          max-width: 100%;
+          padding: 16px;
+          box-sizing: border-box;
+        }
+
+        .title {
+          width: 100%;
+          font-size: 1.8rem;
+          margin: 0.75rem auto;
+          text-align: center;
+          line-height: 1.15;
+        }
+
+        .title2,
+        .author_title {
+          width: 100%;
+          margin: 0.5rem auto;
+          font-size: 0.95rem;
+          text-align: center;
+          color: #666;
+        }
+
+        .artykul {
+          width: 100%;
+          margin: 0 auto;
+          font-size: 1rem;
+          line-height: 1.7;
+        }
+
+        .artykul p {
+          margin: 0 0 1rem;
+        }
+
+        .artykul img,
+        .artykul figure img,
+        .artykul iframe,
+        .artykul embed,
+        .artykul video {
+          width: 100%;
+          max-width: 100%;
+          height: auto;
+          display: block;
+        }
+
+        .menu,
+        .bottom {
+          flex-direction: column;
+          align-items: center;
+          gap: 0.75rem;
+          padding: 16px;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .article-container,
+        .title,
+        .title2,
+        .author_title,
+        .artykul,
+        .artykul h3,
+        article h1,
+        article h2,
+        article p,
+        .opis,
+        .footnotes,
+        blockquote {
+          width: 100% !important;
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+        }
+
+        .article-container {
+          max-width: 100% !important;
+          padding: 16px !important;
+          box-sizing: border-box !important;
+        }
+
+        .title {
+          font-size: 1.9rem !important;
+          line-height: 1.2 !important;
+          text-align: center !important;
+        }
+
+        .title2,
+        .author_title {
+          font-size: 0.95rem !important;
+          color: #666 !important;
+          text-align: center !important;
+        }
+
+        .artykul {
+          font-size: 1rem !important;
+          line-height: 1.7 !important;
+          padding: 0 !important;
+        }
+
+        .artykul img,
+        .artykul figure img,
+        .artykul iframe,
+        .artykul embed,
+        .artykul video,
+        article p img {
+          width: 100% !important;
+          max-width: 100% !important;
+          height: auto !important;
+          margin: 0.75rem 0 !important;
+          display: block !important;
+        }
+      }
 
     </style>
   </head>
@@ -281,11 +536,12 @@ blockquote {
 
     <main>
       
-  <article>
-    <h1>Styl i przygnębienie</h1>
-    <h2>Szarość i powtarzalność w architekturze współczesnej na przykładzie nowego budynku ASP na Wybrzeżu Kościuszkowskim</h2>
-    <h3>Milana Pepenina</h3>
-    <div><h3 id="szkoła-naszym-domem-tyle-tylko-że-domy-bywają-różne-mogą-być-zarówno-przytulne-i-harmonijne-jak-i-opresyjne-brak-infrastruktury-wspierającej-długie-przebywanie-w-budynku-asp-przy-wybrzeżu-kościuszkowskim-jest-powszechnym-problemem-a-średnia-ocena-tej-infrastruktury-wynosi-17-w-pięciostopniowej-skali">Szkoła naszym domem. Tyle tylko, że domy bywają różne: mogą być zarówno przytulne i harmonijne, jak i opresyjne. Brak infrastruktury wspierającej długie przebywanie w budynku ASP przy Wybrzeżu Kościuszkowskim jest powszechnym problemem, a średnia ocena tej infrastruktury wynosi 1,7 w pięciostopniowej skali.</h3>
+  <div class="article-container">
+    <section class="title">Styl i przygnębienie</section>
+    <section class="title2">Szarość i powtarzalność w architekturze współczesnej na przykładzie nowego budynku ASP na Wybrzeżu Kościuszkowskim</section>
+    <section class="author_title">Milana Pepenina</section>
+    <article class="artykul">
+      <div><h3 id="szkoła-naszym-domem-tyle-tylko-że-domy-bywają-różne-mogą-być-zarówno-przytulne-i-harmonijne-jak-i-opresyjne-brak-infrastruktury-wspierającej-długie-przebywanie-w-budynku-asp-przy-wybrzeżu-kościuszkowskim-jest-powszechnym-problemem-a-średnia-ocena-tej-infrastruktury-wynosi-17-w-pięciostopniowej-skali">Szkoła naszym domem. Tyle tylko, że domy bywają różne: mogą być zarówno przytulne i harmonijne, jak i opresyjne. Brak infrastruktury wspierającej długie przebywanie w budynku ASP przy Wybrzeżu Kościuszkowskim jest powszechnym problemem, a średnia ocena tej infrastruktury wynosi 1,7 w pięciostopniowej skali.</h3>
 <p><img src="img/IMG_1.jpg" alt="fasada budynku"></p>
 <p>Przeciętny student w Polsce spędza na uczelni około dwudziestu godzin tygodniowo<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> –  jest to czas, który poświęca się nie tylko na naukę, lecz także na budowanie relacji społecznych, wymianę pomysłów oraz rozwój twórczy. W tym procesie na studenta wpływa wielka ilość czynników, a jednym z nich jest architektura i wnętrza budynku uczelni. W XXI wieku stwierdzenie, że architektura ma wielki wpływ na psychikę osób w niej przebywających, nie wymaga szczególnego wyjaśnienia – ludzkość zdawała sobie z tego sprawę od starożytności, choć pierwsze badania zyskały na znaczeniu dopiero w XIX i XX wieku. Le Corbusier zrewolucjonizował nowoczesne budownictwo poprzez zastosowanie filozofii wpływu mieszkalnictwa na jakość życia ludzi – wierzył w to, że architektura przede wszystkim ma służyć ludziom, nie na odwrót.
 Sześćdziesiąt lat po śmierci architekta jego filozofia i rewolucyjne podejście do budowania nadal są żywe. Zarazem definicje piękna i komfortu w architekturze uległy wielkim zmianom.</p>
@@ -337,7 +593,8 @@ Warto zauważyć, że te pozytywne aspekty nie neutralizują krytycznych i negat
 </ol>
 </div>
 </div>
-  </article>
+    </article>
+  </div>
 
     </main>
 

@@ -1,0 +1,20 @@
+/* Responsive styles for single content pages */
+.article-container { max-width: 880px; margin: 0 auto; padding: 1rem; box-sizing: border-box; }
+.title { font-size: 2rem; line-height: 1.1; margin: 0.5rem 0; text-align: center; }
+.title2 { font-size: 1rem; color: #666; text-align: center; margin-bottom: 0.75rem; }
+.author_title { font-size: 0.9rem; color: #999; text-align: center; margin-bottom: 1rem; }
+.artykul { font-size: 1rem; color: #222; word-break: break-word; }
+.artykul img, .artykul figure img { max-width: 100%; height: auto; display: block; margin: 0.5rem auto; }
+.artykul iframe, .artykul embed, .artykul video { max-width: 100%; width: 100%; }
+.artykul p { margin: 0 0 1rem 0; line-height: 1.6; }
+
+@media (min-width: 768px) {
+  .title { font-size: 2.6rem; }
+  .title2 { font-size: 1.2rem; }
+  .article-container { padding: 1.5rem; }
+}
+
+@media (max-width: 420px) {
+  .title { font-size: 1.6rem; }
+  .article-container { padding: 0.75rem; }
+}

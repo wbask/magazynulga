@@ -161,6 +161,9 @@ h4 {
       margin: 0 auto;
       }
 
+
+      
+
       @media (max-width: 768px) {
         .grid,
         .gridmain {
@@ -178,7 +181,110 @@ h4 {
           margin-left: 0;
           margin-right: 0;
         }
-      }
+
+  .article-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  .title {
+    width: 100%;
+    font-size: 1.8rem;
+    margin: 0.75rem auto;
+    text-align: center;
+    line-height: 1.15;
+  }
+
+  .title2,
+  .author_title {
+    width: 100%;
+    margin: 0.5rem auto;
+    font-size: 0.95rem;
+    text-align: center;
+    color: #666;
+  }
+
+  .artykul {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .artykul p {
+    margin: 0 0 1rem;
+  }
+
+  .artykul img,
+  .artykul figure img,
+  .artykul iframe,
+  .artykul embed,
+  .artykul video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .menu,
+  .bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 16px;
+  }
+
+  .grid,
+  .gridmain {
+    grid-template-columns: 1fr;
+  }
+
+  .flip-container,
+  .flipper,
+  .front,
+  .back1,
+  .back2,
+  .back3 {
+    width: 100% !important;
+    min-height: auto !important;
+  }
+
+  .flip-container {
+    max-width: 100% !important;
+  }
+
+  .flipper {
+    min-height: 260px !important;
+  }
+
+  .front img,
+  .back1,
+  .back2,
+  .back3 {
+    width: 100% !important;
+    min-height: 260px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 16px !important;
+  }
+
+  .back1,
+  .back2,
+  .back3 {
+    text-align: left !important;
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+  }
+
+  .back1,
+  .back2,
+  .back3 {
+    padding: 20px !important;
+  }
+}
 
       a, a:visited {
         text-decoration: none;
@@ -198,26 +304,52 @@ h4 {
       height: auto;
       }
 
+
+.title {
+    width: 80%;
+    font-size: 42px;
+    margin: 0px auto;
+    font-family: Playwrite IN;
+}
+
+.title2 {
+    width: 80%;
+    font-size: 25px;
+    margin: 0px auto;
+    font-family: Playwrite IN
+}
+
+.author_title {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.artykul h3 {
+    width: 120%;
+    margin: 0px auto;
+    margin-left: -10%;
+    font-size: 22px;
+    text-align: justify;
+    font-family: Playwrite IN
+}
       
-article {
-width: 70%;
+.artykul {
+width: 40%;
 margin: 0px auto;
 }
 
 article p {
 font-size: 22px;
- 
-margin: 0px auto;
 font-size: 17px;
 text-align: justify;
 }
 
 article p img {
-width: 120%;
+width: 160%;
 height: auto;
 display: relative;
 margin: 20px 0;
-margin-left: -100px;
+margin-left: -30%;
 }
 
 article h1 {
@@ -234,18 +366,12 @@ article h2 {
     font-family: Playwrite IN
 }
 
-article h3 {
-    width: 60%;
-    margin: 0px auto;
-    font-size: 22px;
-    text-align: justify;
-    font-family: Playwrite IN
-}
-
 .footnotes {
-    width: 55%;
-margin: 0px auto;
+    width: 160%;
+    margin: 0px auto;
+    margin-left: -30%;
 font-size: 15px;
+text-align: left;
 }
 
 blockquote {
@@ -258,7 +384,136 @@ blockquote {
     margin-bottom: 25px;
     font-family: "Playwrite US Modern";
 }
-      
+
+      @media (max-width: 768px) {
+        .grid,
+        .gridmain {
+          grid-template-columns: 1fr;
+        }
+
+        .opis,
+        article p,
+        article h1,
+        article h2,
+        article h3,
+        .footnotes,
+        blockquote {
+          width: 100%;
+          margin-left: 0;
+          margin-right: 0;
+        }
+
+        .article-container {
+          width: 100%;
+          max-width: 100%;
+          padding: 16px;
+          box-sizing: border-box;
+        }
+
+        .title {
+          width: 100%;
+          font-size: 1.8rem;
+          margin: 0.75rem auto;
+          text-align: center;
+          line-height: 1.15;
+        }
+
+        .title2,
+        .author_title {
+          width: 100%;
+          margin: 0.5rem auto;
+          font-size: 0.95rem;
+          text-align: center;
+          color: #666;
+        }
+
+        .artykul {
+          width: 100%;
+          margin: 0 auto;
+          font-size: 1rem;
+          line-height: 1.7;
+        }
+
+        .artykul p {
+          margin: 0 0 1rem;
+        }
+
+        .artykul img,
+        .artykul figure img,
+        .artykul iframe,
+        .artykul embed,
+        .artykul video {
+          width: 100%;
+          max-width: 100%;
+          height: auto;
+          display: block;
+        }
+
+        .menu,
+        .bottom {
+          flex-direction: column;
+          align-items: center;
+          gap: 0.75rem;
+          padding: 16px;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .article-container,
+        .title,
+        .title2,
+        .author_title,
+        .artykul,
+        .artykul h3,
+        article h1,
+        article h2,
+        article p,
+        .opis,
+        .footnotes,
+        blockquote {
+          width: 100% !important;
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+        }
+
+        .article-container {
+          max-width: 100% !important;
+          padding: 16px !important;
+          box-sizing: border-box !important;
+        }
+
+        .title {
+          font-size: 1.9rem !important;
+          line-height: 1.2 !important;
+          text-align: center !important;
+        }
+
+        .title2,
+        .author_title {
+          font-size: 0.95rem !important;
+          color: #666 !important;
+          text-align: center !important;
+        }
+
+        .artykul {
+          font-size: 1rem !important;
+          line-height: 1.7 !important;
+          padding: 0 !important;
+        }
+
+        .artykul img,
+        .artykul figure img,
+        .artykul iframe,
+        .artykul embed,
+        .artykul video,
+        article p img {
+          width: 100% !important;
+          max-width: 100% !important;
+          height: auto !important;
+          margin: 0.75rem 0 !important;
+          display: block !important;
+        }
+      }
 
     </style>
   </head>
@@ -281,11 +536,12 @@ blockquote {
 
     <main>
       
-  <article>
-    <h1>Czy jaszczurki mają rację?</h1>
-    <h2>Czyli o tym, jak wpływa na nas barwa światła</h2>
-    <h3>Maja Beczek</h3>
-    <div><h3 id="zastanawiasz-się-nad-wymianą-przepalonej-żarówki-ale-nie-wiesz-jak-się-za-to-zabrać-każdy-ma-jakieś-preferencje-co-do-oświetlenia-nie-każde-z-nich-są-jednak-zdrowe-i-bezpieczne-jakie-korzyści-i-wady-płyną-z-barwy-i-mocy-światła-czy-człowiek-to-tak-naprawdę-zależna-od-światła-jaszczurka">Zastanawiasz się nad wymianą przepalonej żarówki, ale nie wiesz jak się za to zabrać? Każdy ma jakieś preferencje co do oświetlenia. Nie każde z nich są jednak zdrowe i bezpieczne. Jakie korzyści i wady płyną z barwy i mocy światła? Czy człowiek to tak naprawdę zależna od światła jaszczurka?</h3>
+  <div class="article-container">
+    <section class="title">Czy jaszczurki mają rację?</section>
+    <section class="title2">Czyli o tym, jak wpływa na nas barwa światła</section>
+    <section class="author_title">Maja Beczek</section>
+    <article class="artykul">
+      <div><h3 id="zastanawiasz-się-nad-wymianą-przepalonej-żarówki-ale-nie-wiesz-jak-się-za-to-zabrać-każdy-ma-jakieś-preferencje-co-do-oświetlenia-nie-każde-z-nich-są-jednak-zdrowe-i-bezpieczne-jakie-korzyści-i-wady-płyną-z-barwy-i-mocy-światła-czy-człowiek-to-tak-naprawdę-zależna-od-światła-jaszczurka">Zastanawiasz się nad wymianą przepalonej żarówki, ale nie wiesz jak się za to zabrać? Każdy ma jakieś preferencje co do oświetlenia. Nie każde z nich są jednak zdrowe i bezpieczne. Jakie korzyści i wady płyną z barwy i mocy światła? Czy człowiek to tak naprawdę zależna od światła jaszczurka?</h3>
 <p><img src="img/cover.png" alt="Jaszczurki na żarówce"></p>
 <p>Wyobraźmy sobie niewielkich rozmiarów terrarium. Jest szklane, stoi gdzieś pod ścianą, niczym modny dodatek. Oświetla je wewnątrz mocne światło. W środku widać zieleń zasadzonych w nim roślin oraz trochę szarych kamieni, na których wygrzewa się bliżej niesprecyzowany gatunek gada. Nic nadzwyczajnego, w końcu często mówi się, że ktoś wygrzewa się na słońcu jak jaszczurka – i jak ona spłaszcza się, jakby promienie słoneczne roztapiały ją niczym pozostawione w lato lody. Nie wszyscy jednak wiedzą, że nie jest to jedynie kwestia upodobań czy preferencji co do temperatury otoczenia.</p>
 <p>Gady należą bowiem do grupy zwierząt ektotermicznych. Oznacza to, że ze względu na niski poziom metabolizmu muszą polegać na środowisku zewnętrznym w celu ogrzania się. Nie jest to jednak takie proste, jak ustawienie bardzo ciepłej żarówki na cały dzień. Zwierzęta te potrzebują różnorodności promieniowania UV, które wpływa na ich odpowiedni rozwój, pomagając na przykład zachować rytm dnia i nocy. Dzieje się tak dlatego, że są one w stanie rozpoznać zmieniające się pory dnia oraz pory roku, a to dzięki identyfikacji intensywności oraz koloru światła. Wszystko zależy oczywiście od gatunku jaszczurki oraz specyfikacji jej funkcjonowania, ponieważ, tak jak ludzie, każdy gad jest inny. Dla przykładu gady nocne mają cieńszą i bardziej przezroczystą skórę, ponieważ ze względu na godziny funkcjonowania muszą polegać na świetle odbitym, które jest słabsze i bardziej rozproszone.</p>
@@ -310,7 +566,8 @@ Podsumowując: dbajmy o siebie na co dzień tak bardzo, jak właściciele jaszcz
 <h4 id="marie-engwall-patients-in-intensive-care-feel-better-with-light-adapted-to-the-time-of-day-university-of-gothenburg-15-marca-2017-dostęp-17-grudnia-2025">Marie Engwall, <a href="https://www.gu.se/en/news/patients-in-intensive-care-feel-better-with-light-adapted-to-the-time-of-day"><em>Patients in intensive care feel better with light adapted to the time of day</em></a>, University of Gothenburg, 15 marca 2017, dostęp: 17 grudnia 2025</h4>
 <h4 id="marek-matacz-jak-światło-wpływa-na-nasze-zdrowie-i-samopoczucie-serwis-zdrowie-2-stycznia-2019-aktualizacja-10-stycznia-2025-dostęp-2-stycznia-2026">Marek Matacz, <a href="https://zdrowie.pap.pl/srodowisko/jak-swiatlo-wplywa-na-nasze-zdrowie-i-samopoczucie"><em>Jak światło wpływa na nasze zdrowie i samopoczucie</em></a>, „Serwis Zdrowie”, 2 stycznia 2019 (aktualizacja: 10 stycznia 2025), dostęp: 2 stycznia 2026</h4>
 </div>
-  </article>
+    </article>
+  </div>
 
     </main>
 

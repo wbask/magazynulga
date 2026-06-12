@@ -161,6 +161,9 @@ h4 {
       margin: 0 auto;
       }
 
+
+      
+
       @media (max-width: 768px) {
         .grid,
         .gridmain {
@@ -178,7 +181,110 @@ h4 {
           margin-left: 0;
           margin-right: 0;
         }
-      }
+
+  .article-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  .title {
+    width: 100%;
+    font-size: 1.8rem;
+    margin: 0.75rem auto;
+    text-align: center;
+    line-height: 1.15;
+  }
+
+  .title2,
+  .author_title {
+    width: 100%;
+    margin: 0.5rem auto;
+    font-size: 0.95rem;
+    text-align: center;
+    color: #666;
+  }
+
+  .artykul {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .artykul p {
+    margin: 0 0 1rem;
+  }
+
+  .artykul img,
+  .artykul figure img,
+  .artykul iframe,
+  .artykul embed,
+  .artykul video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .menu,
+  .bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 16px;
+  }
+
+  .grid,
+  .gridmain {
+    grid-template-columns: 1fr;
+  }
+
+  .flip-container,
+  .flipper,
+  .front,
+  .back1,
+  .back2,
+  .back3 {
+    width: 100% !important;
+    min-height: auto !important;
+  }
+
+  .flip-container {
+    max-width: 100% !important;
+  }
+
+  .flipper {
+    min-height: 260px !important;
+  }
+
+  .front img,
+  .back1,
+  .back2,
+  .back3 {
+    width: 100% !important;
+    min-height: 260px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 16px !important;
+  }
+
+  .back1,
+  .back2,
+  .back3 {
+    text-align: left !important;
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+  }
+
+  .back1,
+  .back2,
+  .back3 {
+    padding: 20px !important;
+  }
+}
 
       a, a:visited {
         text-decoration: none;
@@ -198,26 +304,52 @@ h4 {
       height: auto;
       }
 
+
+.title {
+    width: 80%;
+    font-size: 42px;
+    margin: 0px auto;
+    font-family: Playwrite IN;
+}
+
+.title2 {
+    width: 80%;
+    font-size: 25px;
+    margin: 0px auto;
+    font-family: Playwrite IN
+}
+
+.author_title {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.artykul h3 {
+    width: 120%;
+    margin: 0px auto;
+    margin-left: -10%;
+    font-size: 22px;
+    text-align: justify;
+    font-family: Playwrite IN
+}
       
-article {
-width: 70%;
+.artykul {
+width: 40%;
 margin: 0px auto;
 }
 
 article p {
 font-size: 22px;
- 
-margin: 0px auto;
 font-size: 17px;
 text-align: justify;
 }
 
 article p img {
-width: 120%;
+width: 160%;
 height: auto;
 display: relative;
 margin: 20px 0;
-margin-left: -100px;
+margin-left: -30%;
 }
 
 article h1 {
@@ -234,18 +366,12 @@ article h2 {
     font-family: Playwrite IN
 }
 
-article h3 {
-    width: 60%;
-    margin: 0px auto;
-    font-size: 22px;
-    text-align: justify;
-    font-family: Playwrite IN
-}
-
 .footnotes {
-    width: 55%;
-margin: 0px auto;
+    width: 160%;
+    margin: 0px auto;
+    margin-left: -30%;
 font-size: 15px;
+text-align: left;
 }
 
 blockquote {
@@ -258,7 +384,136 @@ blockquote {
     margin-bottom: 25px;
     font-family: "Playwrite US Modern";
 }
-      
+
+      @media (max-width: 768px) {
+        .grid,
+        .gridmain {
+          grid-template-columns: 1fr;
+        }
+
+        .opis,
+        article p,
+        article h1,
+        article h2,
+        article h3,
+        .footnotes,
+        blockquote {
+          width: 100%;
+          margin-left: 0;
+          margin-right: 0;
+        }
+
+        .article-container {
+          width: 100%;
+          max-width: 100%;
+          padding: 16px;
+          box-sizing: border-box;
+        }
+
+        .title {
+          width: 100%;
+          font-size: 1.8rem;
+          margin: 0.75rem auto;
+          text-align: center;
+          line-height: 1.15;
+        }
+
+        .title2,
+        .author_title {
+          width: 100%;
+          margin: 0.5rem auto;
+          font-size: 0.95rem;
+          text-align: center;
+          color: #666;
+        }
+
+        .artykul {
+          width: 100%;
+          margin: 0 auto;
+          font-size: 1rem;
+          line-height: 1.7;
+        }
+
+        .artykul p {
+          margin: 0 0 1rem;
+        }
+
+        .artykul img,
+        .artykul figure img,
+        .artykul iframe,
+        .artykul embed,
+        .artykul video {
+          width: 100%;
+          max-width: 100%;
+          height: auto;
+          display: block;
+        }
+
+        .menu,
+        .bottom {
+          flex-direction: column;
+          align-items: center;
+          gap: 0.75rem;
+          padding: 16px;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .article-container,
+        .title,
+        .title2,
+        .author_title,
+        .artykul,
+        .artykul h3,
+        article h1,
+        article h2,
+        article p,
+        .opis,
+        .footnotes,
+        blockquote {
+          width: 100% !important;
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+        }
+
+        .article-container {
+          max-width: 100% !important;
+          padding: 16px !important;
+          box-sizing: border-box !important;
+        }
+
+        .title {
+          font-size: 1.9rem !important;
+          line-height: 1.2 !important;
+          text-align: center !important;
+        }
+
+        .title2,
+        .author_title {
+          font-size: 0.95rem !important;
+          color: #666 !important;
+          text-align: center !important;
+        }
+
+        .artykul {
+          font-size: 1rem !important;
+          line-height: 1.7 !important;
+          padding: 0 !important;
+        }
+
+        .artykul img,
+        .artykul figure img,
+        .artykul iframe,
+        .artykul embed,
+        .artykul video,
+        article p img {
+          width: 100% !important;
+          max-width: 100% !important;
+          height: auto !important;
+          margin: 0.75rem 0 !important;
+          display: block !important;
+        }
+      }
 
     </style>
   </head>
@@ -281,11 +536,12 @@ blockquote {
 
     <main>
       
-  <article>
-    <h1>WróżkaGPT</h1>
-    <h2>Dlaczego szukamy komfortu u „większej inteligencji”?</h2>
-    <h3>Julia Kaptacz</h3>
-    <div><h3 id="w-świecie-który-odrzucił-magię-wróżka-powróciła-jako-zawsze-dostępny-algorytm-logiczny-i-gotowy-by-nadać-sens-temu-co-wymyka-się-spod-kontroli--wróżkagpt">W świecie, który odrzucił magię, wróżka powróciła jako zawsze dostępny algorytm, logiczny i gotowy, by nadać sens temu, co wymyka się spod kontroli – WróżkaGPT.</h3>
+  <div class="article-container">
+    <section class="title">WróżkaGPT</section>
+    <section class="title2">Dlaczego szukamy komfortu u „większej inteligencji”?</section>
+    <section class="author_title">Julia Kaptacz</section>
+    <article class="artykul">
+      <div><h3 id="w-świecie-który-odrzucił-magię-wróżka-powróciła-jako-zawsze-dostępny-algorytm-logiczny-i-gotowy-by-nadać-sens-temu-co-wymyka-się-spod-kontroli--wróżkagpt">W świecie, który odrzucił magię, wróżka powróciła jako zawsze dostępny algorytm, logiczny i gotowy, by nadać sens temu, co wymyka się spod kontroli – WróżkaGPT.</h3>
 <p><img src="img/img.png" alt="wizualizacja wrózkiGPT"></p>
 <p>Zanim pojawiły się algorytmy, były rytuały. Zanim pojawiły się modele językowe, były karty, znaki, szepty i zwierzenia wypowiadane nad stołem, pomiędzy człowiekiem a człowiekiem (nawet jeśli nazwano go „medium”). W ludziach od zawsze funkcjonuje potrzeba dowiedzenia się prawdy o własnym losie, często w sytuacjach krytycznych bądź pełnych lęku. To nie chęć bycia poprowadzonym, tylko potrzeba zniwelowania niewiedzy i wątpliwości – najczęściej przez figurę posiadającą „większą inteligencję” od ludzkiej. W tym sensie chodzi o kogoś, kto ukazuje się jako potrafiący  dostrzec więcej. Nie przestaliśmy się bać. Współczesne społeczeństwo pragnie jednak racjonalizmu, i choć już dawno zdemistyfikowało instytucję wróżki, wciąż poszukuje jej figury. Dzisiaj odnajduje ją w języku algorytmów i sieci neuronowych. Potrzeba ulgi w lęku nie zniknęła, zmienił się sposób jej poszukiwania i zaufanie, że WróżkaGPT nas wysłucha i nie oszuka.</p>
 <p>Dziś nie idziemy do wróżki, wchodzimy w okno chatu. Wpływa na to nie tylko ogólna dostępność i powszechność modeli językowych, lecz także kondycja naszych czasów. Dawna wróżka miała ciało, patrzyła w oczy, naprawdę wykonywała czynność słuchania, zastanawiała się, mogła się mylić, a przede wszystkim brała odpowiedzialność za swoje słowa, choćby ze względu na reputację. Każde spotkanie było sytuacją społeczną, nie tylko komunikatem tekstowym. Wróżka mogła powiedzieć „nie wiem”. Możliwość odmowy w połączeniu z kruchością natury ludzkiej przyniosło skutek depersonalizacji jej funkcji – poprzez sprowadzenie do generowania tekstu na życzenie. Generator nie może wprost odmówić, jest zawsze dostępny i gotowy do uczestnictwa w narracji. WróżkaGPT może wszystko zracjonalizować, ale nie może niczego doświadczyć. Tym samym niczego nie kwestionuje i nigdy nie odmawia.</p>
@@ -309,7 +565,8 @@ blockquote {
 <li>Pascale Davies, <em>Japanese woman &lsquo;marries&rsquo; ChatGPT AI character in symbolic ceremony</em>, <a href="https://www.euronews.com/next/2025/12/18/japanese-woman-marries-chatgpt-ai-character-in-symbolic-ceremony">„Euro News”</a>, December 2025, dostęp 20 stycznia 2026.</li>
 </ul>
 </div>
-  </article>
+    </article>
+  </div>
 
     </main>
 
