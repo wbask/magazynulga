@@ -45,7 +45,7 @@ background-color: white;
 }
 .post h4 {
 margin: 0 0 8px;
-font-size: 15px;
+font-size: 15spx;
 }
 .post .author {
 margin: 0 0 12px;
@@ -199,86 +199,67 @@ h4 {
       }
 
       
- 
-
 article {
-  box-sizing: border-box;
+width: 70%;
+margin: 0px auto;
 }
 
+article p {
+font-size: 22px;
  
-.article {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 0 16px;
-  font-size: 17px;
-  text-align: justify;
-  box-sizing: border-box;
+margin: 0px auto;
+font-size: 17px;
+text-align: justify;
 }
 
-.article p {
-  font-size: 17px;
-  line-height: 1.6;
-  margin: 0 0 1em 0;
+article p img {
+width: 120%;
+height: auto;
+display: relative;
+margin: 20px 0;
+margin-left: -100px;
 }
 
- 
-.article img,
-.photo.img img,
-article img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 20px 0;
-  max-width: 100%;
+article h1 {
+    width: 70%;
+    font-size: 42px;
+    margin: 0px auto;
+    font-family: Playwrite IN
 }
 
- 
-.title,
-.title2,
-.lead,
-.przypisy,
-.wyimek {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 0 16px;
-  box-sizing: border-box;
+article h2 {
+    width: 70%;
+    font-size: 25px;
+    margin: 0px auto;
+    font-family: Playwrite IN
 }
 
-.title { font-size: 42px; font-family: Playwrite IN; }
-.title2 { font-size: 25px; font-family: Playwrite IN; font-style: italic; }
-.lead { font-size: 22px; text-align: justify; font-family: Playwrite IN; }
-.przypisy { font-size: 15px; }
-.wyimek { font-size: 19px; margin: 25px auto; font-family: "Playwrite US Modern"; }
+article h3 {
+    width: 60%;
+    margin: 0px auto;
+    font-size: 22px;
+    text-align: justify;
+    font-family: Playwrite IN
+}
 
- 
+.footnotes {
+    width: 55%;
+margin: 0px auto;
+font-size: 15px;
+}
+
 blockquote {
-  max-width: 760px;
-  margin: 25px auto;
-  padding: 0 16px;
-  font-size: 19px;
-  box-sizing: border-box;
+    width: 140%;
+    font-size: 19px;
+    margin: 0px auto;
+    margin-left: -100px;
+    margin-right: 1000px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: "Playwrite US Modern";
 }
+      
 
- 
-@media (max-width: 1024px) {
-  .title { font-size: 36px; }
-  .lead { font-size: 20px; }
-}
-
-@media (max-width: 768px) {
-  .grid, .gridmain { grid-template-columns: 1fr; }
-  .article, .title, .title2, .lead, .przypisy { max-width: 92%; }
-  .title { font-size: 32px; }
-  .lead { font-size: 18px; }
-  .article p { font-size: 16px; }
-  blockquote, .wyimek { margin-left: 0; margin-right: 0; }
-}
-
-@media (max-width: 480px) {
-  .title { font-size: 26px; }
-  .lead { font-size: 16px; }
-  .article p { font-size: 15px; }
-}
     </style>
   </head>
   <body>
@@ -292,7 +273,7 @@ blockquote {
       </section>
 
       <section class="logo">
-      <a href="http://localhost:1313/magazynulga/">
+      <a href="/magazynulga/">
         <img src="/magazynulga/ulga_logo.svg" alt="Przekreślone tłuste litery napisu „Ulga”, logotyp magazynu">
       </a>
       </section>
@@ -300,19 +281,11 @@ blockquote {
 
     <main>
       
-
-  
-  <section class="title">Kobiety górą!</section>
-  
-
-  
-  <section class="title2"><i>czyli pionierki wspinaczki górskiej w Polsce w XIX w.</i></section>
-  
-
-  
-
-  <section class="article">
-    <h3 id="wspinaczka-choć-wciąż-była-daleka-od-tej-którą-znamy-dziś-niosła-za-sobą-poczucie-przygody-i-przekraczania-własnych-ograniczeń-choć-ten-drugi-rodzaj-górskiej-aktywności-był-w-xix-wieku-przeważnie-domeną-mężczyzn-na-pamiątkowych-zdjęciach-wśród-piętrzących-się-skał-i-stromych-szczytów-można-dostrzec-także-kobiety-ich-obecność-wśród-skalistych-krajobrazów-świadczyła-o-tym-że-góry-zaczynały-być-przestrzenią-bardziej-otwartą-choć-w-dalszym-ciągu-pełną-ograniczeń">Wspinaczka, choć wciąż była daleka od tej, którą znamy dziś, niosła za sobą poczucie przygody i przekraczania własnych ograniczeń. Choć ten drugi rodzaj górskiej aktywności był w XIX wieku przeważnie domeną mężczyzn, na pamiątkowych zdjęciach, wśród piętrzących się skał i stromych szczytów, można dostrzec także kobiety. Ich obecność wśród skalistych krajobrazów świadczyła o tym, że góry zaczynały być przestrzenią bardziej otwartą, choć w dalszym ciągu pełną ograniczeń.</h3>
+  <article>
+    <h1>Kobiety górą!</h1>
+    <h2>czyli pionierki wspinaczki górskiej w Polsce w XIX w.</h2>
+    <h3>Maja Romanowska</h3>
+    <div><h3 id="wspinaczka-choć-wciąż-była-daleka-od-tej-którą-znamy-dziś-niosła-za-sobą-poczucie-przygody-i-przekraczania-własnych-ograniczeń-choć-ten-drugi-rodzaj-górskiej-aktywności-był-w-xix-wieku-przeważnie-domeną-mężczyzn-na-pamiątkowych-zdjęciach-wśród-piętrzących-się-skał-i-stromych-szczytów-można-dostrzec-także-kobiety-ich-obecność-wśród-skalistych-krajobrazów-świadczyła-o-tym-że-góry-zaczynały-być-przestrzenią-bardziej-otwartą-choć-w-dalszym-ciągu-pełną-ograniczeń">Wspinaczka, choć wciąż była daleka od tej, którą znamy dziś, niosła za sobą poczucie przygody i przekraczania własnych ograniczeń. Choć ten drugi rodzaj górskiej aktywności był w XIX wieku przeważnie domeną mężczyzn, na pamiątkowych zdjęciach, wśród piętrzących się skał i stromych szczytów, można dostrzec także kobiety. Ich obecność wśród skalistych krajobrazów świadczyła o tym, że góry zaczynały być przestrzenią bardziej otwartą, choć w dalszym ciągu pełną ograniczeń.</h3>
 <h3 id="wstęp">Wstęp</h3>
 <p>Dzięki nowym możliwościom szybkiego podróżowania koleją w XIX wieku bardzo szybko rozwijała się różnego rodzaju turystyka, w tym także turystyka górska. Podróż, która dawniej wymagała długich tygodni, skomplikowanych przygotowań i znacznych kosztów, stała się łatwiejsza, krótsza i bardziej osiągalna. Kolej nie tylko skróciła dystanse, lecz także zmieniła sposób myślenia o podróżach. Góry, dotąd postrzegane jako obszary dzikie i nieprzystępne, zaczęły stopniowo zyskiwać w oczach społeczeństwa.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
 <p>Tatry zaistniały w świadomości Polek i Polaków jako miejsce atrakcyjne turystyczne i dobre dla zdrowia. Nie wszyscy jednak decydowali się na to samo oblicze górskich wycieczek. Niektórzy trzymali się bezpiecznych spacerów, wybierając łagodniejsze trasy, które nie wymagały ani szczególnego wysiłku, ani odwagi. Inni natomiast, prowadzeni przez góralskich przewodników, zdobywali skaliste szczyty. To właśnie oni wybierali trudniejszą drogę, decydując się na wysiłek fizyczny i kontakt z bardziej wymagającym obliczem gór.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
@@ -351,26 +324,15 @@ Wysokie obcasy były więc zupełnie niepraktyczne i nie nadawały się do takie
 </li>
 </ol>
 </div>
-
-  </section>
-
-  
-  
-  
-    <section class="photo img">
-      <img src="/magazynulga/img/cover.jpg" alt="">
-    </section>
-  
-
-  
-
+</div>
+  </article>
 
     </main>
 
     <footer>
 
       <section class="logo">
-      <a href="http://localhost:1313/magazynulga/">
+      <a href="/magazynulga/">
         <img src="/magazynulga/ulga_logo.svg" alt="Przekreślone tłuste litery napisu „Ulga”, logotyp magazynu">
       </a>
       </section>
