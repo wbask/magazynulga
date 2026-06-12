@@ -45,7 +45,7 @@ background-color: white;
 }
 .post h4 {
 margin: 0 0 8px;
-font-size: 15px;
+font-size: 15spx;
 }
 .post .author {
 margin: 0 0 12px;
@@ -201,84 +201,62 @@ h4 {
       
  
 
-article {
-  box-sizing: border-box;
+article p {
+font-size: 22px;
+width: 40%;
+margin: 0px auto;
+font-size: 17px;
+text-align: justify;
 }
 
- 
-.article {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 0 16px;
-  font-size: 17px;
-  text-align: justify;
-  box-sizing: border-box;
+article p img {
+width: 120%;
+height: auto;
+display: relative;
+margin: 20px 0;
+margin-left: -100px;
 }
 
-.article p {
-  font-size: 17px;
-  line-height: 1.6;
-  margin: 0 0 1em 0;
+article h1 {
+    width: 70%;
+    font-size: 42px;
+    margin: 0px auto;
+    font-family: Playwrite IN
 }
 
- 
-.article img,
-.photo.img img,
-article img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 20px 0;
-  max-width: 100%;
+article h2 {
+    width: 70%;
+    font-size: 25px;
+    margin: 0px auto;
+    font-family: Playwrite IN
 }
 
- 
-.title,
-.title2,
-.lead,
-.przypisy,
-.wyimek {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 0 16px;
-  box-sizing: border-box;
+article h3 {
+    width: 60%;
+    margin: 0px auto;
+    font-size: 22px;
+    text-align: justify;
+    font-family: Playwrite IN
 }
 
-.title { font-size: 42px; font-family: Playwrite IN; }
-.title2 { font-size: 25px; font-family: Playwrite IN; font-style: italic; }
-.lead { font-size: 22px; text-align: justify; font-family: Playwrite IN; }
-.przypisy { font-size: 15px; }
-.wyimek { font-size: 19px; margin: 25px auto; font-family: "Playwrite US Modern"; }
+.footnotes {
+    width: 55%;
+margin: 0px auto;
+font-size: 15px;
+}
 
- 
 blockquote {
-  max-width: 760px;
-  margin: 25px auto;
-  padding: 0 16px;
-  font-size: 19px;
-  box-sizing: border-box;
+    width: 140%;
+    font-size: 19px;
+    margin: 0px auto;
+    margin-left: -100px;
+    margin-right: 1000px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: "Playwrite US Modern";
 }
+      
 
- 
-@media (max-width: 1024px) {
-  .title { font-size: 36px; }
-  .lead { font-size: 20px; }
-}
-
-@media (max-width: 768px) {
-  .grid, .gridmain { grid-template-columns: 1fr; }
-  .article, .title, .title2, .lead, .przypisy { max-width: 92%; }
-  .title { font-size: 32px; }
-  .lead { font-size: 18px; }
-  .article p { font-size: 16px; }
-  blockquote, .wyimek { margin-left: 0; margin-right: 0; }
-}
-
-@media (max-width: 480px) {
-  .title { font-size: 26px; }
-  .lead { font-size: 16px; }
-  .article p { font-size: 15px; }
-}
     </style>
   </head>
   <body>
@@ -292,7 +270,7 @@ blockquote {
       </section>
 
       <section class="logo">
-      <a href="http://localhost:1313/magazynulga/">
+      <a href="/magazynulga/">
         <img src="/magazynulga/ulga_logo.svg" alt="Przekreślone tłuste litery napisu „Ulga”, logotyp magazynu">
       </a>
       </section>
@@ -376,7 +354,7 @@ blockquote {
     <footer>
 
       <section class="logo">
-      <a href="http://localhost:1313/magazynulga/">
+      <a href="/magazynulga/">
         <img src="/magazynulga/ulga_logo.svg" alt="Przekreślone tłuste litery napisu „Ulga”, logotyp magazynu">
       </a>
       </section>
