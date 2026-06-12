@@ -287,12 +287,12 @@ blockquote {
     <header>
       <section class="menu">
         {{ range .Site.Menus.main }}
-      <a href="{{ .URL }}">{{ .Name }}</a>
+      <a href="{{ .URL | absURL }}">{{ .Name }}</a>
        {{ end }}
       </section>
 
       <section class="logo">
-      <a href="{{ .Site.BaseURL }}">
+      <a href="{{ "/" | absURL }}">
         <img src="{{ "ulga_logo.svg" | relURL }}" alt="Przekreślone tłuste litery napisu „Ulga”, logotyp magazynu">
       </a>
       </section>
